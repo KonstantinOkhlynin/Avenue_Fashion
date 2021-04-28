@@ -1,0 +1,40 @@
+@import url(./__nav/category__nav.css);
+@import url(./__list/category__list.css);
+@import url(./__item/category__item.css);
+@import url(./__cards/category__cards.css);
+@import url(./__card/category__card.css);
+
+.category {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+    margin-bottom: 62px;
+    margin-left: 140px;
+    margin-right: 140px;
+    position: relative;
+}
+
+
+
+
+
+.category::before {
+    content: " ";
+    background-image: url('../../../images/border-category.png');
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+}
+
+.category::after {
+    content: " ";
+    background-image: url('../../../images/border-category.png');
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+}

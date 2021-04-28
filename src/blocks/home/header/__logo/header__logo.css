@@ -1,0 +1,10 @@
+.header__logo {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 1;
+}
+

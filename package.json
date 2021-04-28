@@ -1,0 +1,49 @@
+{
+  "name": "newsexplorer-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend/issues"
+  },
+  "homepage": "https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend#readme",
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/plugin-proposal-class-properties": "7.12.13",
+    "@babel/preset-env": "7.12.11",
+    "autoprefixer": "10.1.0",
+    "babel-loader": "8.2.2",
+    "cross-env": "7.0.3",
+    "css-loader": "5.0.1",
+    "cssnano": "4.1.10",
+    "file-loader": "6.2.0",
+    "gh-pages": "3.1.0",
+    "html-webpack-plugin": "4.5.1",
+    "mini-css-extract-plugin": "1.3.3",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "postcss-loader": "4.1.0",
+    "style-loader": "2.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.3.1",
+    "webpack-dev-server": "3.11.1",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.4.1",
+    "image-webpack-loader": "7.0.1",
+    "path": "0.12.7"
+  }
+}

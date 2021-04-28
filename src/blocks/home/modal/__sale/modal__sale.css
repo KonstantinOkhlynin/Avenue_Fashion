@@ -1,0 +1,15 @@
+.modal__sale {
+    width: 407px;
+    height: 200px;
+    background-color: #333333;
+    margin-top: 40px;
+    padding: 62px 54px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal__sale:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    transition: transform .5s linear ;
+}

@@ -1,0 +1,16 @@
+.header__list {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  grid-template-columns: minmax(40px, 96px) minmax(66px, 123px) minmax(79px, 137px) minmax(101px, 159px) minmax(81px, 196px);
+  grid-template-rows: 27px;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . .";
+}
+
+
+
+
+

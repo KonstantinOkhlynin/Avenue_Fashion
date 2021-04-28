@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="header__container">
+      <div class="header__auth">
+        <p class="header__currency">Currency :<select class="header__select">
+          <option class="header__option">GPB</option>
+          <option class="header__option">RUB</option>
+          <option class="header__option">EUR</option>
+          <option class="header__option">USD</option>
+        </select></p>
+        <p class="header__register">Register</p>
+        <p class="header__signin">Sign In</p>
+
+        <div class="header__buy">
+          <select class="header__select header__select-white">
+            <option class="header__option ">empty</option>
+          </select>
+        </div>
+      </div>
+    </div> 
+      <div class="header__main">
+        <h1 class="header__logo">avenue <span class="header__logo-span">fashion</span></h1>
+        <nav class="nav header__nav">
+          <ul class="nav__list header__list">
+            <li class="nav__item header__item">mens
+              <div class="modal">
+                <nav class="modal__nav">
+                  <ul class="modal__list">
+                    <p class="modal__title">casuals</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Hoodies & Sweatshirts</li>
+                    <li class="modal__item">Polo Shirts</li>
+                    <li class="modal__item">Sportswear</li>
+                    <li class="modal__item">Trousers & Chinos</li>
+                    <li class="modal__item">T-Shirts</li>
+                  </ul>
+          
+                  <ul class="modal__list">
+                    <p class="modal__title">formal</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Shirts</li>
+                    <li class="modal__item">Suits</li>
+                    <li class="modal__item">Trousers</li>
+                  </ul>
+                </nav>
+          
+                <div class="modal__sale">
+                  <p class="modal__sale-title">autumn sale!</p>
+                  <p class="modal__sale-subtitle">up to 50% off</p>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item header__item">womens
+              <div class="modal">
+                <nav class="modal__nav">
+                  <ul class="modal__list">
+                    <p class="modal__title">casuals</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Hoodies & Sweatshirts</li>
+                    <li class="modal__item">Polo Shirts</li>
+                    <li class="modal__item">Sportswear</li>
+                    <li class="modal__item">Trousers & Chinos</li>
+                    <li class="modal__item">T-Shirts</li>
+                  </ul>
+          
+                  <ul class="modal__list">
+                    <p class="modal__title">formal</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Shirts</li>
+                    <li class="modal__item">Suits</li>
+                    <li class="modal__item">Trousers</li>
+                  </ul>
+                </nav>
+          
+                <div class="modal__sale">
+                  <p class="modal__sale-title">autumn sale!</p>
+                  <p class="modal__sale-subtitle">up to 50% off</p>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item header__item_color">the brand</li>
+            <li class="nav__item header__item">local stores
+              <div class="modal">
+                <nav class="modal__nav">
+                  <ul class="modal__list">
+                    <p class="modal__title">casuals</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Hoodies & Sweatshirts</li>
+                    <li class="modal__item">Polo Shirts</li>
+                    <li class="modal__item">Sportswear</li>
+                    <li class="modal__item">Trousers & Chinos</li>
+                    <li class="modal__item">T-Shirts</li>
+                  </ul>
+          
+                  <ul class="modal__list">
+                    <p class="modal__title">formal</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Shirts</li>
+                    <li class="modal__item">Suits</li>
+                    <li class="modal__item">Trousers</li>
+                  </ul>
+                </nav>
+          
+                <div class="modal__sale">
+                  <p class="modal__sale-title">autumn sale!</p>
+                  <p class="modal__sale-subtitle">up to 50% off</p>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item header__item">look book
+              <div class="modal">
+                <nav class="modal__nav">
+                  <ul class="modal__list">
+                    <p class="modal__title">casuals</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Hoodies & Sweatshirts</li>
+                    <li class="modal__item">Polo Shirts</li>
+                    <li class="modal__item">Sportswear</li>
+                    <li class="modal__item">Trousers & Chinos</li>
+                    <li class="modal__item">T-Shirts</li>
+                  </ul>
+          
+                  <ul class="modal__list">
+                    <p class="modal__title">formal</p>
+                    <li class="modal__item">Jakets</li>
+                    <li class="modal__item">Shirts</li>
+                    <li class="modal__item">Suits</li>
+                    <li class="modal__item">Trousers</li>
+                  </ul>
+                </nav>
+          
+                <div class="modal__sale">
+                  <p class="modal__sale-title">autumn sale!</p>
+                  <p class="modal__sale-subtitle">up to 50% off</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <input type="search" class="header__search"  placeholder="Search..">
+      </div>
+    </header>
+
+
+    <section class="main">
+
+      <div class="home-background">
+        <button class="home-background__button">shop men’s collection</button>
+      </div>
+
+      <div class="category">
+        <nav class="category__nav">
+          <ul class="category__list">
+            <li class="category__item">popular</li>
+            <li class="category__item">new arrivals</li>
+            <li class="category__item">best sellers</li>
+            <li class="category__item">special offers</li>
+            <li class="category__item">coming soon</li>
+          </ul>
+        </nav>
+
+
+
+
+        <div class="category__cards">
+          <div class="category__card  category__card-drid-one"></div>
+          <div class="category__card  category__card-drid-two"></div>
+          <div class="category__card  category__card-drid-tree"></div>
+          <div class="category__card  category__card-drid-four"></div>
+          <div class="category__card  category__card-drid-five">
+            <div class="card-overflow">
+              <div class="card-overflow__container">
+              <div class="card-overflow__container-img">
+                <div class="card-overflow__img-front"></div>
+                <div class="card-overflow__img-back"></div>
+              </div>
+              <div class="card-overflow__img-info"></div>
+            </div>
+            </div>
+          </div>
+          <div class="category__card  category__card-drid-six"></div>
+      </div>
+
+      <!-- <div class="card-overflow">
+        <div class="card-overflow__container">
+        <div class="card-overflow__container-img">
+          <div class="card-overflow__img-front"></div>
+          <div class="card-overflow__img-back"></div>
+        </div>
+        <div class="card-overflow__img-info"></div>
+      </div> -->
+
+      </div>
+
+
+
+
+    </section>
+
+
+    <div class="modal">
+      <nav class="modal__nav">
+        <ul class="modal__list">
+          <p class="modal__title">casuals</p>
+          <li class="modal__item">Jakets</li>
+          <li class="modal__item">Hoodies & Sweatshirts</li>
+          <li class="modal__item">Polo Shirts</li>
+          <li class="modal__item">Sportswear</li>
+          <li class="modal__item">Trousers & Chinos</li>
+          <li class="modal__item">T-Shirts</li>
+        </ul>
+
+        <ul class="modal__list">
+          <p class="modal__title">formal</p>
+          <li class="modal__item">Jakets</li>
+          <li class="modal__item">Shirts</li>
+          <li class="modal__item">Suits</li>
+          <li class="modal__item">Trousers</li>
+        </ul>
+      </nav>
+
+      <div class="modal__sale">
+        <p class="modal__sale-title">autumn sale!</p>
+        <p class="modal__sale-subtitle">up to 50% off</p>
+      </div>
+    </div>
+    
+
+  </div>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+</html>

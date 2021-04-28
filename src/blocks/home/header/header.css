@@ -1,0 +1,32 @@
+@import url(./__auth/header__auth.css);
+@import url(./__currency/header__currency.css);
+@import url(./__select/header__select.css);
+@import url(./__option/header__option.css);
+@import url(./__register/header__register.css);
+@import url(./__signin/header__signin.css);
+@import url(./__buy/header__buy.css);
+@import url(./__logo/header__logo.css);
+@import url(./__logo-span/header__logo-span.css);
+@import url(./__list/header__list.css);
+@import url(./__item/header__item.css);
+@import url(./__main/header__main.css);
+@import url(./__search/header__search.css);
+@import url(./__select-white/header__select-white.css);
+
+.header {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.header__container {
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  

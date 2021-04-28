@@ -1,0 +1,16 @@
+@import url(./__container/card-overflow__container.css);
+@import url(./__container-img/card-overflow__container-img.css);
+@import url(./__img-front/card-overflow__img-front.css);
+@import url(./__img-back/card-overflow__img-back.css);
+@import url(./__img-info/card-overflow__img-info.css);
+
+
+
+.card-overflow {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+}

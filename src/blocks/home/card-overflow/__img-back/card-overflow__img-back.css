@@ -1,0 +1,6 @@
+.card-overflow__img-back {
+    width: 82px;
+    height: 102px;
+    background-image: url('../../../../images/thumb-front.png');
+    margin-top: 15px;
+}

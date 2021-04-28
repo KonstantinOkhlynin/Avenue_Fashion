@@ -1,0 +1,55 @@
+.category__cards {
+  display: grid;
+  grid-template-columns: minmax(210px,420px) minmax(210px,420px) minmax(210px,420px) minmax(210px,420px);
+  grid-template-rows: 500px 174px 500px;
+  gap: 30px 30px;
+  grid-template-areas:
+    "a b d d"
+    "c c d d"
+    "c c g h";
+    margin: 62px 0 62px 0;
+}
+
+.category__card-drid-one {
+    background-image: url(../../../../images/photo-a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: a;
+}
+.category__card-drid-two {
+    background-image: url(../../../../images/photo-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: b;
+}
+.category__card-drid-tree {
+    background-image: url(../../../../images/photo-d.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: d;
+}
+.category__card-drid-four {
+    background-image: url(../../../../images/photo-c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: c;
+}
+.category__card-drid-five {
+    background-image: url(../../../../images/photo-g.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    grid-area: g;
+}
+.category__card-drid-six {
+    background-image: url(../../../../images/photo-h.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: h;
+}

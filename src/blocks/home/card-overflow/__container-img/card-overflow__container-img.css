@@ -1,0 +1,5 @@
+.card-overflow__container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
