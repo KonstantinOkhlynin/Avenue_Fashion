@@ -1,7 +1,7 @@
-.card-overflow__container {
+.footer__main {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 470px;
     align-items: center;
-    padding: 15px;
+    background-color: #f8f8f8;
 }

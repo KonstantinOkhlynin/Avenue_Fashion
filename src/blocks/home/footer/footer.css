@@ -1,0 +1,20 @@
+@import url(./__info/footer__info.css);
+@import url(./__item/footer__item.css);
+@import url(./__list-title/footer__list-title.css);
+@import url(./__list/footer__list.css);
+@import url(./__main/footer__main.css);
+@import url(./__nav/footer__nav.css);
+@import url(./__social/footer__social.css);
+@import url(./__social-container/footer__social-container.css);
+@import url(./__social-container-subtitle/footer__social-container-subtitle.css);
+@import url(./__social-container-title/footer__social-container-title.css);
+@import url(./__social-icon/footer__social-icon.css);
+@import url(./__footer/footer__footer.css);
+@import url(./__copyright/footer__copyright.css);
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

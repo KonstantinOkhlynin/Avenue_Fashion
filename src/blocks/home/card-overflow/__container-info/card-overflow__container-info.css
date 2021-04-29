@@ -1,0 +1,15 @@
+.card-overflow__container-info {
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 18px 35px 18px 35px;
+    background-color: #ffffff;
+    border-top: solid 1px #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+}
+
+

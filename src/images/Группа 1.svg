@@ -1,0 +1,19 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #727272;
+      }
+
+      .cls-2 {
+        font-size: 17px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: FontAwesome;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <circle id="circle" class="cls-1" cx="15" cy="15" r="15"/>
+  <text id="_" data-name="" class="cls-2" x="14.999" y="20.998"></text>
+</svg>

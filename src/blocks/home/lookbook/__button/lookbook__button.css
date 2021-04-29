@@ -1,0 +1,32 @@
+.lookbook__button {
+border: solid 2px rgb(115, 115, 115);
+background-color: rgba(115, 115, 115, 0);
+width: 184px;
+height: 63px;
+font-size: 16px;
+text-transform: uppercase;
+color: rgb(69, 70, 71);
+font-family: 'Montserrat';
+font-weight: 400;
+font-style: normal;
+margin-top: 30px;
+letter-spacing: 3px;
+cursor: pointer;
+}
+
+
+.lookbook__button:hover {
+background-color: #00c8c8;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  
