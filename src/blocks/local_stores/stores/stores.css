@@ -1,0 +1,18 @@
+@import url(./__container/stores__container.css);
+@import url(./__title/stores__title.css);
+@import url(./__subtitle/stores__subtitle.css);
+@import url(./__text/stores__text.css);
+@import url(./__button/stores__button.css);
+
+.stores {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(218px,400px));
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+  justify-content: center;
+  width: 100%;
+  margin-top: 62px;
+  margin-bottom: 62px;
+}

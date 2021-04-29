@@ -1,0 +1,15 @@
+@import url(./__map/stores-info__map.css);
+@import url(./__container/stores-info__container.css);
+@import url(./__title/stores-info__title.css);
+@import url(./__subtitle/stores-info__subtitle.css);
+@import url(./__text/stores-info__text.css);
+.stores-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(500px, 1fr) minmax(500px, 663px);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+  background-color: #f8f8f8;
+}

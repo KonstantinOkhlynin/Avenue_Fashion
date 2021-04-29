@@ -1,0 +1,16 @@
+@import url(./_mod/main-background__title_mod.css);
+
+.main-background__title {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+
+  

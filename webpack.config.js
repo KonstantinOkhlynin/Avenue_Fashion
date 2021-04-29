@@ -73,6 +73,11 @@ module.exports = {
                 template: './src/index.html',
                 filename: 'index.html'
             }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/localstores.html',
+                filename: 'localstores.html'
+            }),
             new webpack.DefinePlugin({
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
             }),

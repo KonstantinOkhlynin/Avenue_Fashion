@@ -10,3 +10,8 @@
 @import url(./blocks/home/card-overflow/card-overflow.css);
 @import url(./blocks/home/lookbook/lookbook.css);
 @import url(./blocks/home/footer/footer.css);
+
+
+@import url(./blocks/local_stores/main-background/main-background.css);
+@import url(./blocks/local_stores/stores/stores.css);
+@import url(./blocks/local_stores/stores-info/stores-info.css);

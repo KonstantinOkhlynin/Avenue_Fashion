@@ -104,3 +104,20 @@
   font-style: italic;
 }
 
+
+
+
+
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+		url('./fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
+		url('./fonts/MyriadPro-Regular.woff') format('woff'),
+		url('./fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
