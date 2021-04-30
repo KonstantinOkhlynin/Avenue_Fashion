@@ -3,6 +3,9 @@
 @import url(./__title/stores-info__title.css);
 @import url(./__subtitle/stores-info__subtitle.css);
 @import url(./__text/stores-info__text.css);
+@import url(./__list/stores-info__list.css);
+@import url(./__item/stores-info__item.css);
+@import url(./__link/stores-info__link.css);
 .stores-info {
   width: 100%;
   display: grid;
@@ -12,4 +15,5 @@
   grid-template-areas:
     ". .";
   background-color: #f8f8f8;
+  margin-bottom: 125px;
 }

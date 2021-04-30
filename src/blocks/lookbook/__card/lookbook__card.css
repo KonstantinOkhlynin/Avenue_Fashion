@@ -1,0 +1,46 @@
+.lookbook__card {
+
+}
+
+.lookbook__card:first-child {
+    grid-area: a;
+    background-image: url(../../../images/photo-a.png);
+}
+
+.lookbook__card:nth-child(2) {
+    background-image: url(../../../images/photo-b.png);
+    grid-area: b;
+}
+.lookbook__card:nth-child(3) {
+    background-image: url(../../../images/photo-f.png);
+    grid-area: d;
+    background-position: right;
+}
+.lookbook__card:nth-child(4) {
+    background-image: url(../../../images/photo-d.png);
+    grid-area: c;
+}
+
+.lookbook__card:nth-child(5) {
+    background-image: url(../../../images/photo-c.png);
+    grid-area: e;
+}
+
+.lookbook__card:nth-child(6) {
+    background-image: url(../../../images/photo-g.png);
+    grid-area: f;
+}
+
+.lookbook__card:nth-child(7) {
+    background-image: url(../../../images/photo-h.png);
+    grid-area: g;
+}
+
+.lookbook__card:nth-child(8) {
+    background-image: url(../../../images/photo-s.png);
+    grid-area: h;
+}
+.lookbook__card:last-child {
+    background-image: url(../../../images/photo-n.png);
+    grid-area: j;
+}

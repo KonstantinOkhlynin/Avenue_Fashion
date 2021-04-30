@@ -1,0 +1,13 @@
+.auth__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.auth__container:first-child {
+    border-right: solid 1px #eeeeee;
+    padding-right: 35px;
+    box-sizing: border-box;
+}

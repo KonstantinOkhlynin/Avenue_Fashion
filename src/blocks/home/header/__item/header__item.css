@@ -1,4 +1,13 @@
-@import url(./_color/header__item_color.css);
+
+
+.header__item {
+        position: relative;
+        color:#303030;
+}
+
+.header__item:nth-child(3)::before {
+    display: none;
+}
 
 .header__item::before {
     content: " ";

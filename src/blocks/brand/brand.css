@@ -1,0 +1,20 @@
+@import url(./__container/brand__container.css);
+@import url(./__img/brand__img.css);
+@import url(./__subtitle/brand__subtitle.css);
+@import url(./__text-container/brand__text-container.css);
+@import url(./__text/brand__text.css);
+@import url(./__title/brand__title.css);
+
+
+.brand {
+    display: grid;
+    grid-template-columns: minmax(500px,600px) minmax(500px,570px);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". .";
+    width: 100%;
+    margin-top: 62px;
+    margin-bottom: 125px;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+.auth__form {
+    display: grid;
+    grid-template-columns: minmax(300px, 550px);
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "."
+    ".";
+    width: 100%;
+}

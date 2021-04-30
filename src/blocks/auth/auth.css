@@ -1,0 +1,15 @@
+@import url(./__container/auth__container.css);
+@import url(./__form/auth__form.css);
+@import url(./__input/auth__input.css);
+@import url(./__title/auth__title.css);
+
+.auth {
+    display: grid;
+    grid-template-columns: minmax(300px,585px) minmax(300px,550px);
+    grid-template-rows: 1fr;
+    gap: 0px 35px;
+    grid-template-areas:
+      ". .";
+    justify-content: center;
+    width: 100%;
+} 

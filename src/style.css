@@ -2,7 +2,6 @@
 @import url(./vendor/fonts.css);
 @import url(./blocks/home/root/root.css);
 @import url(./blocks/home/header/header.css);
-@import url(./blocks/home/nav/nav.css);
 @import url(./blocks/home/modal/modal.css);
 @import url(./blocks/home/main/main.css);
 @import url(./blocks/home/home-background/home-background.css);
@@ -15,3 +14,9 @@
 @import url(./blocks/local_stores/main-background/main-background.css);
 @import url(./blocks/local_stores/stores/stores.css);
 @import url(./blocks/local_stores/stores-info/stores-info.css);
+
+@import url(./blocks/brand/brand.css);
+
+@import url(./blocks/lookbook/lookbook.css);
+
+@import url(./blocks/auth/auth.css);

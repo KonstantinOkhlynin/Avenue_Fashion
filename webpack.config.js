@@ -78,6 +78,21 @@ module.exports = {
                 template: './src/localstores.html',
                 filename: 'localstores.html'
             }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/brand.html',
+                filename: 'brand.html'
+            }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/lookbookpage.html',
+                filename: 'lookbookpage.html'
+            }),
+            new HtmlWebpackPlugin({ // настроили плагин
+                inject: false,
+                template: './src/auth.html',
+                filename: 'auth.html'
+            }),
             new webpack.DefinePlugin({
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
             }),

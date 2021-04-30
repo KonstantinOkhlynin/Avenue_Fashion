@@ -1,0 +1,72 @@
+.stores-info__item {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(142, 140, 140);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.stores-info__item:first-child::before {
+    content: " ";
+    background-image: url(../../../../images/map-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+}
+
+.stores-info__item:nth-child(2)::before {
+    content: " ";
+    background-image: url(../../../../images/tel-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+    z-index: -1;
+}
+
+.stores-info__item:nth-child(3)::before {
+    content: " ";
+    background-image: url(../../../../images/link-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+}
+
+.stores-info__item:nth-child(4)::before {
+    content: " ";
+    background-image: url(../../../../images/mail-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+}
+
+.stores-info__item:last-child::before {
+    content: " ";
+    background-image: url(../../../../images/oclock-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+}
