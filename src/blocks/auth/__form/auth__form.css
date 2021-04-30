@@ -1,7 +1,7 @@
 .auth__form {
     display: grid;
     grid-template-columns: minmax(300px, 550px);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 18px 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
     "."
