@@ -1,0 +1,19 @@
+.header__logo {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 1;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+  .header__logo {
+    grid-area: a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+}
+

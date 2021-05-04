@@ -1,8 +1,0 @@
-export const buttonLO = document.querySelector('.stores__button-js-LO')
-export const buttonNY = document.querySelector('.stores__button-js-NY')
-export const buttonPA = document.querySelector('.stores__button-js-PA')
-export const storesInfoMap = document.querySelector('.stores-info__map')
-export const storesinfoTitle = document.querySelector('.stores-info__title')
-export const storesinfoSubtitle = document.querySelector('.stores-info__subtitle')
-export const storesInfoText = document.querySelector('.stores-info__text')
-export const storesInfolink = document.querySelector('.stores-info__link')

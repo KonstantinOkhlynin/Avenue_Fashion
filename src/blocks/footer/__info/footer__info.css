@@ -1,0 +1,20 @@
+.footer__info {
+    display: grid;
+    grid-template-columns: minmax(118px,237px) minmax(129px,237px) minmax(136px,237px) minmax(147px,237px) minmax(169px,231px);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . . .";
+    margin-top: 62px;
+    margin-bottom: 92px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 920px) {
+  .footer__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 62px;
+    margin-bottom: 92px;
+}
+}

@@ -1,0 +1,7 @@
+
+
+@media screen and (min-width: 300px) and (max-width: 920px) {
+  .footer__nav {
+    margin-right: 30px;
+  }
+}

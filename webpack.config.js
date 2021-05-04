@@ -6,6 +6,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
+const autoprefixer = require('autoprefixer');
 module.exports = {
     // entry: { main: path.resolve(__dirname, './src/index.js')},
     entry: { main: './src/index.js' },
@@ -31,6 +32,17 @@ module.exports = {
                     },
                     'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
                 },
+              //   {
+              //     loader: 'postcss-loader',
+              //     options: {
+              //         plugins: [
+              //             autoprefixer({
+              //                 browsers:['ie >= 8', 'last 4 version']
+              //             })
+              //         ],
+              //         sourceMap: true
+              //     }
+              // },
                 {
                     test: /\.(eot|ttf|woff|woff2)$/,
                     loader: 'file-loader?name=./vendor/[name].[ext]'
@@ -60,14 +72,14 @@ module.exports = {
 
         plugins: [
             new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
-            new OptimizeCssAssetsPlugin({
-                assetNameRegExp: /\.css$/g,
-                cssProcessor: require('cssnano'),
-                cssProcessorPluginOptions: {
-                        preset: ['default'],
-                },
-                canPrint: true
-        }),
+        //     new OptimizeCssAssetsPlugin({
+        //         assetNameRegExp: /\.css$/g,
+        //         cssProcessor: require('cssnano'),
+        //         cssProcessorPluginOptions: {
+        //                 preset: ['default'],
+        //         },
+        //         canPrint: true
+        // }),
             new HtmlWebpackPlugin({ // настроили плагин
                 inject: false,
                 template: './src/index.html',

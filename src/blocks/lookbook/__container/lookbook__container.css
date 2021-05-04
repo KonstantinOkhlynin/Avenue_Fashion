@@ -1,0 +1,27 @@
+.lookbook__container {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 100px;
+    box-sizing: border-box;
+    padding-right: 60px;
+}
+
+
+.lookbook__container:first-child {
+    background-image: url(../../../images/lookbook-background-one.png);
+}
+
+.lookbook__container:nth-child(2) {
+    background-image: url(../../../images/lookbook-background-two.png);
+}
+
+.lookbook__container:last-child {
+    background-image: url(../../../images/lookbook-background-tree.png);
+}

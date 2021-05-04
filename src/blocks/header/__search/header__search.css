@@ -1,0 +1,32 @@
+.header__search {
+    width: 100%;
+    border: solid 1px #e7e7e7;
+    position: relative;
+    outline: none;
+    margin-top: -3px;
+}
+
+.header__search::after {
+    content: " ";
+    background-image: url(../../../images/loupe.png);
+    display: block;
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+  .header__search {
+    grid-area: c;
+}
+}
+
+@media screen and (max-width: 920px) {
+  .header__search {
+    display: none;
+  }
+}

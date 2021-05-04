@@ -1,6 +1,11 @@
 import "./style.css";
-import {initialCards} from './js/arrays/array';
-import {buttonLO, buttonNY, buttonPA, storesInfoMap, storesinfoTitle, storesinfoSubtitle, storesInfoText, storesInfolink} from './js/constants/constant';
+import {initialCards, womensMenu} from './js/arrays/arrays';
+import {Modal} from './js/classes/Modal.js';
+import {storesInfoMap, storesinfoTitle, storesinfoSubtitle, storesInfoText, storesInfolink, headerWomensJs, headerLocalstoresJs, headerLookbookjs} from './js/constants/constants';
+const storesButtonJsLO = document.querySelector('.stores__button-js-LO')
+const storesButtonjsNY = document.querySelector('.stores__button-js-NY')
+const storesButtonJsPA = document.querySelector('.stores__button-js-PA')
+const storesContainer = document.querySelector('.stores__container')
 
 function stores (num) {
     storesInfoMap.src = initialCards[num].map;
@@ -20,6 +25,27 @@ function nextStores(event) {
       stores (2)
     }
   }
+
+
+
+  // const storesLO = new Stores(storesButtonJsLO,initialCards, storesContainer)
+  // storesLO.listen(0)
+
+  // const storesNY = new Stores(storesButtonjsNY,initialCards)
+  // storesNY.listen(1)
+  // const storesPA = new Stores(storesButtonJsPA,initialCards)
+  // storesPA.listen(2)
+
+
+  const modalWomens = new Modal(headerWomensJs)
+  modalWomens.addModal(womensMenu);
+
+  const modalLocalstores = new Modal(headerLocalstoresJs)
+  modalLocalstores.addModal(womensMenu);
+
+  const modalLookbook = new Modal(headerLookbookjs)
+  modalLookbook.addModal(womensMenu);
+
 
 
 

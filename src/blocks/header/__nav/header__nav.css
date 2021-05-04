@@ -1,0 +1,11 @@
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+  .header__nav {
+    grid-area: b;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header__nav {
+    display: none;
+  }
+}

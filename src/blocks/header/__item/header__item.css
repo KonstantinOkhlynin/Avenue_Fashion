@@ -1,0 +1,28 @@
+.header__item {
+        position: relative;
+        color:#303030;
+}
+
+.header__item:nth-child(3)::before {
+    display: none;
+}
+
+.header__item::before {
+    content: " ";
+    background-image: url(../../../images/arrow-bottom.png);
+    display: block;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.header__item:hover {
+   color: #00c8c8;
+   cursor: pointer;
+}
+
+.header__item:hover .modal {
+    display: block;
+ }
+

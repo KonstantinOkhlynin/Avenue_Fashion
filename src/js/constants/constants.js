@@ -1,0 +1,8 @@
+export const storesInfoMap = document.querySelector('.stores-info__map')
+export const storesinfoTitle = document.querySelector('.stores-info__title')
+export const storesinfoSubtitle = document.querySelector('.stores-info__subtitle')
+export const storesInfoText = document.querySelector('.stores-info__text')
+export const storesInfolink = document.querySelector('.stores-info__link')
+export const headerWomensJs = document.querySelector('.header__womens-js')
+export const headerLocalstoresJs = document.querySelector('.header__localstores-js')
+export const headerLookbookjs = document.querySelector('.header__lookbook-js')

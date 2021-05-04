@@ -1,0 +1,23 @@
+@import url(./__container/card-overflow__container.css);
+@import url(./__container-img/card-overflow__container-img.css);
+@import url(./__img/card-overflow__img.css);
+@import url(./__img-info/card-overflow__img-info.css);
+@import url(./__container-info/card-overflow__container-info.css);
+@import url(./__title/card-overflow__title.css);
+@import url(./__subtitle/card-overflow__subtitle.css);
+@import url(./__container-icons/card-overflow__container-icons.css);
+@import url(./__icon/card-overflow__icon.css);
+
+
+
+.card-overflow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: none;
+    -webkit-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.2);
+}

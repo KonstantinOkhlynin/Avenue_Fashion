@@ -1,8 +1,18 @@
-@import url(./__cards/lookbook__cards.css);
-@import url(./__card/lookbook__card.css);
-@import url(./__list/lookbook__list.css);
-@import url(./__titles/lookbook__titles.css);
-@import url(./__subtitles/lookbook__subtitles.css);
-@import url(./__text/lookbook__text.css);
-@import url(./__box/lookbook__box.css);
-@import url(./_span/lookbook__titles_span.css);
+@import url(./__container/lookbook__container.css);
+@import url(./__title/lookbook__title.css);
+@import url(./__subtitle/lookbook__subtitle.css);
+@import url(./__paragraph/lookbook__paragraph.css);
+@import url(./__button/lookbook__button.css);
+
+.lookbook {
+    width: 100%;
+    height: auto;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: minmax(0,663px) minmax(0,663px) minmax(0,663px);
+    grid-template-rows: 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+    ". . .";
+    margin-bottom: 125px;
+}
