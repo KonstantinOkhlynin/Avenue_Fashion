@@ -125,6 +125,7 @@ for (let i = 0; i < rating.length; i++) {
       })
     }
   }
+
   function setRatingValue (value,rating) {
     if (!rating.classList.contains('rating_sending')){
       rating.classList.add('rating_sending')
