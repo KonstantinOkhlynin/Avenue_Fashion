@@ -1,10 +1,10 @@
 .brand__title {
-    font-size: 18px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(87, 81, 83);
-    text-transform: uppercase; 
-    margin: 0;
-    margin-bottom: 30px;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(87, 81, 83);
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }

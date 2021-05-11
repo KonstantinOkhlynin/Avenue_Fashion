@@ -1,0 +1,35 @@
+.product__button {
+  width: 240px;
+  height: 60px;
+  position: relative;
+  background-color: #333333;
+  border-color: #333333;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.product__button::before {
+  content: "";
+  width: 18px;
+  height: 16px;
+  background-image: url(../../../images/shopping-cart.png);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.product__button:nth-child(2) {
+  width: 303px;
+  background-color: #fff;
+  color: #454647;
+}
+
+.product__button:nth-child(2)::before {
+  content: "";
+  width: 18px;
+  height: 16px;
+  background-image: url(../../../images/like-love.png);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}

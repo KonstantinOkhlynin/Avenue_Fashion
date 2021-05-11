@@ -7,16 +7,32 @@
 @import url(./blocks/home-background/home-background.css);
 @import url(./blocks/category/category.css);
 @import url(./blocks/card-overflow/card-overflow.css);
-@import url(./blocks/lookbook/lookbook.css);
+@import url(./blocks/lookbook/lookbooks.css);
 @import url(./blocks/footer/footer.css);
-
-
+@import url(./blocks/button/button.css);
+@import url(./blocks/mobile-menu/mobile-menu.css);
 @import url(./blocks/main-background/main-background.css);
 @import url(./blocks/stores/stores.css);
 @import url(./blocks/stores-info/stores-info.css);
-
 @import url(./blocks/brand/brand.css);
-
 @import url(./blocks/lookbooks/lookbook.css);
-
 @import url(./blocks/auth/auth.css);
+@import url(./blocks/product/product.css);
+@import url(./blocks/slider/slider.css);
+@import url(./blocks/rating/rating.css);
+
+.popup_is-opened {
+  display: flex;
+}
+
+
+
+.slider__item .zoomer {
+  display: none;
+  /* background-position: 50% 50%; */
+  background-size: 250%; /*This allows an artificial extra zoom (low resolution) */
+  width: 100%;
+  height: 100%;
+  cursor: zoom-out;
+  z-index: 1;
+}

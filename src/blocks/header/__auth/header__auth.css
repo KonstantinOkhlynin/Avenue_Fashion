@@ -1,14 +1,20 @@
 .header__auth {
-display: grid;
-grid-template-columns: minmax(115px, 807px) minmax(55px, 90px) minmax(43px, 126px) minmax(147px, 157px);
-grid-template-rows: 1fr;
-gap: 0px 0px;
-grid-template-areas:
-  ". . . .";
-background-color: #333333;
-align-items: center;
-margin: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: minmax(115px, 807px) minmax(55px, 90px) minmax(43px, 126px) minmax(147px, 157px);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . .";
+  background-color: #333333;
+  align-items: center;
+  margin: 0 20px 0 20px;
 }
 
-
-
+@media screen and (max-width: 450px) {
+  .header__auth {
+    height: 45px;
+    grid-template-columns: minmax(55px, 90px) 50px;
+    grid-template-areas:
+      ". .";
+  }
+}

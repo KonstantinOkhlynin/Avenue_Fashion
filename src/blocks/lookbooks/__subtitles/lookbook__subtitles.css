@@ -1,14 +1,11 @@
 .lookbook__subtitles {
-    font-size: 13px;
-    font-family: "Montserrat";
-    color: rgb(114, 114, 114);
-    text-transform: uppercase;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(114, 114, 114);
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
 }
-
-
-  

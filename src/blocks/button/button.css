@@ -1,0 +1,18 @@
+.button {
+  border: solid 2px rgb(115, 115, 115);
+  background-color: rgba(115, 115, 115, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(69, 70, 71);
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #00c8c8;
+  border-color: #00c8c8;
+}

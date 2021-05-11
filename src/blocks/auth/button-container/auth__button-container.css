@@ -1,0 +1,16 @@
+.auth__button-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .auth__button-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 15px;
+  }
+}

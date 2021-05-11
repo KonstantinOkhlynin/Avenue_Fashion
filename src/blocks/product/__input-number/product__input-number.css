@@ -1,0 +1,12 @@
+.product__input-number {
+  width: 70px;
+  height: 35px;
+  box-sizing: border-box;
+  border: solid 1px #e7e7e7;
+  grid-area: t;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+opacity: 1;
+}

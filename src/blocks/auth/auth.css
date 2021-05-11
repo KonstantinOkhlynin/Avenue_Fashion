@@ -2,16 +2,42 @@
 @import url(./__form/auth__form.css);
 @import url(./__input/auth__input.css);
 @import url(./__title/auth__title.css);
+@import url(./__button/auth__button.css);
+@import url(./__link/auth__link.css);
+@import url(./button-container/auth__button-container.css);
+@import url(./__checkbox/auth__checkbox.css);
+@import url(./__checkbox-title/auth__checkbox-title.css);
+@import url(./__checkbox-container/auth__checkbox-container.css);
+@import url(./__button-create/auth__button-create.css);
 
 .auth {
-    display: grid;
-    grid-template-columns: minmax(300px,585px) minmax(300px,550px);
-    grid-template-rows: 1fr;
-    gap: 0px 35px;
+  display: grid;
+  grid-template-columns: minmax(200px, 605px) minmax(200px, 605px);
+  grid-template-rows: 470px;
+  gap: 20px 0;
+  grid-template-areas:
+    ". .";
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 125px;
+}
+
+
+@media screen and (max-width: 971px) {
+  .auth {
+    grid-template-columns: minmax(300px, 570px);
+    grid-template-rows: 275px 402px;
     grid-template-areas:
-      ". .";
-    justify-content: center;
-    width: 100%;
-    margin-top: 60px;
-    margin-bottom: 125px;
-} 
+      "."
+      "."
+    ;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .auth {
+    grid-template-rows: 300px 402px;
+
+  }
+}

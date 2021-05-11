@@ -1,0 +1,15 @@
+.auth__link {
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(0, 200, 200);
+  text-decoration: none;
+  text-align: end;
+}
+
+@media screen and (max-width: 500px) {
+  .auth__link {
+    text-align: start;
+  }
+}

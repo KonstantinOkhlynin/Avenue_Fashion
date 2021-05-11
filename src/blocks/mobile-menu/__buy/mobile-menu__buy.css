@@ -1,0 +1,14 @@
+.mobile-menu__buy {
+  position: relative;
+}
+
+.mobile-menu__buy::before {
+  content: " ";
+  background-image: url(../../../images/shopping-cart.png);
+  display: block;
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  left: -25px;
+  top: 2px;
+}

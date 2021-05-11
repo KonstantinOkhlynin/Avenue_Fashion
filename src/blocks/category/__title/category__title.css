@@ -1,0 +1,13 @@
+.category__title {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(153, 153, 153);
+  margin: 0;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .category__title {
+    display: block;
+  }
+}

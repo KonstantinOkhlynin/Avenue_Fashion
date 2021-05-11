@@ -1,9 +1,8 @@
 .modal__nav {
-    display: grid;
-    grid-template-columns: minmax(150px, 237px) minmax(56px, 170px);
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". .";
+  display: grid;
+  grid-template-columns: minmax(150px, 237px) minmax(56px, 170px);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
 }
-

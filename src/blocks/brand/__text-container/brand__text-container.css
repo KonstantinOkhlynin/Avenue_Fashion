@@ -1,17 +1,28 @@
 .brand__text-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .brand__text-container:first-child {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .brand__text-container:nth-child(2) {
-    margin-top: 62px;
+  margin-top: 62px;
 }
 
-.brand__text-container:last-child {
+.brand__text-container:nth-child(3) {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .brand__text-container:first-child {
+    margin-top: 15px;
+  }
+
+  .brand__text-container:nth-child(2) {
     margin-top: 30px;
+  }
+
 }

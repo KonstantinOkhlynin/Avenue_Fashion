@@ -1,10 +1,45 @@
 .auth__form {
-    display: grid;
-    grid-template-columns: minmax(300px, 550px);
-    grid-template-rows: 18px 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr);
+  grid-template-rows: 18px 74px 74px 89px 58px 89px;
+  gap: 0px 0px;
+  grid-template-areas:
     "."
-    ".";
-    width: 100%;
+    "."
+    "."
+    "."
+    "."
+    "."
+  ;
+  width: 100%;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.auth__form_padding {
+  padding-right: 35px;
+}
+
+
+@media screen and (max-width: 971px) {
+  .auth__form_padding {
+    padding-right: 0;
+  }
+
+  .auth__form:first-child {
+    grid-template-rows: 18px 74px 74px 89px;
+  }
+
+  .auth__form:last-child {
+    padding-top: 20px;
+    grid-template-rows: 18px 74px 74px 89px 70px 89px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .auth__form:nth-child(1) {
+    grid-template-rows: 18px 74px 74px 1fr;
+  }
+
 }

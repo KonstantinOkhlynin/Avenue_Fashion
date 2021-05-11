@@ -1,0 +1,32 @@
+@import url(./__info/product__info.css);
+@import url(./__name/product__name.css);
+@import url(./__rating/product__rating.css);
+@import url(./__rating-barrier/product__rating-barrier.css);
+@import url(./__rating-review/product__rating-review.css);
+@import url(./__rating-share/product__rating-share.css);
+@import url(./__share/product__share.css);
+@import url(./__share-icon/product__share-icon.css);
+@import url(./__price/product__price.css);
+@import url(./__subtitle/product__subtitle.css);
+@import url(./__info-text/product__info-text.css);
+@import url(./__select-container/product__select-container.css);
+@import url(./__select/product__select.css);
+@import url(./__input-number/product__input-number.css);
+@import url(./__select-title/product__select-title.css);
+@import url(./__button/product__button.css);
+@import url(./__button-container/product__button-container.css);
+@import url(./__info-compare/product__info-compare.css);
+@import url(./__compare-title/product__compare-title.css);
+
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(200px,570px) minmax(200px,570px);
+  grid-template-rows: 710px 320px;
+  gap: 40px 30px;
+  grid-template-areas:
+    "a b"
+    "c c";
+    justify-content: center;
+    margin-top: 62px;
+}

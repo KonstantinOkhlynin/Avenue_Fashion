@@ -1,6 +1,6 @@
 .card-overflow__container-img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
 }

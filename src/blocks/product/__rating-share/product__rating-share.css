@@ -1,0 +1,9 @@
+.product__rating-share {
+  display: grid;
+  grid-template-columns: minmax(43px,56px) minmax(8px,25px) minmax(13px,25px) minmax(14px,25px) minmax(10px,25px) minmax(12px,25px) minmax(14px,25px);
+  grid-template-rows: 15px;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . .";
+    width: 100%;
+}

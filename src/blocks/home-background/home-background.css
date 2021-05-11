@@ -1,14 +1,50 @@
 @import url(./__button/home-background__button.css);
 
 .home-background {
-    background-image: url(../../images/background-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    width: 100%;
-    height: 919px;
-    margin-top: -101px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  background-image: url(../../images/background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 919px;
+  margin-top: -101px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 1024px)and (max-width: 1530px) {
+  .home-background {
+    background-image: url(../../images/background-image-minn.png);
+    background-position: left;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+  .home-background {
+    background-image: url(../../images/background-image-minn.png);
+    background-position: left;
+    margin-top: -127px;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 920px) {
+  .home-background {
+    background-image: url(../../images/background-image-minn.png);
+    background-position: left;
+    margin-top: -65px;
+    justify-content: center;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-background {
+    background-image: url(../../images/background-image-minn.png);
+    background-position: 26%;
+    margin-top: -65px;
+    justify-content: center;
+    height: 400px;
+  }
 }

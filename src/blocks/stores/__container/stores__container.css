@@ -1,3 +1,6 @@
-.stores__container {
-    
+@media screen and (max-width: 1160px) {
+  .stores__container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

@@ -1,13 +1,17 @@
 .lookbook__titles {
-    font-size: 48px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-style: normal;
-    color: rgb(87, 81, 83);
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 30px;
+  font-size: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(87, 81, 83);
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-
-  
+@media screen and (max-width: 700px) {
+  .lookbook__titles {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}

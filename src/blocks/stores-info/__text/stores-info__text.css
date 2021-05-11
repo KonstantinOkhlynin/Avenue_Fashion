@@ -1,10 +1,16 @@
 .stores-info__text {
-    font-size: 15px;
-    max-width: 551px;
-    color: rgb(142, 140, 140);
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    margin-left: 43px;
+  font-size: 15px;
+  max-width: 551px;
+  color: rgb(142, 140, 140);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  margin-left: 43px;
+}
+
+@media screen and (max-width: 500px) {
+  .stores-info__text {
+    margin-left: 0;
+  }
 }

@@ -1,5 +1,12 @@
 .stores-info__map {
-    width: 100%;
-    height: 530px;
-    border: none;
+  width: 100%;
+  height: 530px;
+  border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .stores-info__map {
+    height: 300px;
+  }
 }

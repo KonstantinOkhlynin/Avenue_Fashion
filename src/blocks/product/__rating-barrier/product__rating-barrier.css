@@ -1,0 +1,5 @@
+.product__rating-barrier {
+  width: 2px;
+  height: 15px;
+  background: linear-gradient(to right, #dddddd , #989898);;
+}

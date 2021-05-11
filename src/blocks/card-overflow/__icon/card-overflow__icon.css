@@ -1,30 +1,30 @@
 .card-overflow__icon {
-width: 30px;
-height: 30px;
-cursor: pointer;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .card-overflow__icon:first-child {
-    background-image: url(../../../images/overflow-icon-basket.png);
-    }
+  background-image: url(../../../images/overflow-icon-basket.png);
+}
 
 .card-overflow__icon:first-child:hover {
-    background-image: url(../../../images/overflow-icon-basket-active.png);
-    }
+  background-image: url(../../../images/overflow-icon-basket-active.png);
+}
 
 .card-overflow__icon:nth-child(2) {
-        background-image: url(../../../images/overflow-icon-like.png);
-        margin: 0 15px 0 15px;
-        }
+  background-image: url(../../../images/overflow-icon-like.png);
+  margin: 0 15px 0 15px;
+}
 
 .card-overflow__icon:nth-child(2):hover {
-        background-image: url(../../../images/overflow-icon-like-active.png);
-        }
+  background-image: url(../../../images/overflow-icon-like-active.png);
+}
 
 .card-overflow__icon:last-child {
-            background-image: url(../../../images/overflow-icon-arrows.png);
-            }
+  background-image: url(../../../images/overflow-icon-arrows.png);
+}
 
 .card-overflow__icon:last-child:hover {
-            background-image: url(../../../images/overflow-icon-arrows-active.png);
-            }
+  background-image: url(../../../images/overflow-icon-arrows-active.png);
+}

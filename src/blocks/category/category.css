@@ -3,16 +3,20 @@
 @import url(./__item/category__item.css);
 @import url(./__cards/category__cards.css);
 @import url(./__card/category__card.css);
+@import url(./__title/category__title.css);
+@import url(./__select/category__select.css);
+@import url(./__option/category__option.css);
+@import url(./__card-text/category__card-text.css);
 
 .category {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: 62px;
-    margin-bottom: 62px;
-    margin-left: 140px;
-    margin-right: 140px;
-    position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-left: 140px;
+  margin-right: 140px;
+  position: relative;
 }
 
 
@@ -20,21 +24,35 @@
 
 
 .category::before {
-    content: " ";
-    background-image: url(../../images/border-category.png);
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 0;
+  content: " ";
+  background-image: url(../../images/border-category.png);
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
 }
 
 .category::after {
-    content: " ";
-    background-image: url(../../images/border-category.png);
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: 0;
+  content: " ";
+  background-image: url(../../images/border-category.png);
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 660px) and (max-width: 1220px) {
+  .category {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .category {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

@@ -1,7 +1,15 @@
 .footer__copyright {
-    font-size: 13px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(119, 119, 119);
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(119, 119, 119);
+}
+
+
+@media screen and (max-width: 450px) {
+  .footer__copyright {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
 }

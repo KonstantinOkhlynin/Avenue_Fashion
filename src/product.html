@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__auth">
+          <p class="header__currency">Currency :<select class="header__select">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <a href="./auth.html" class="header__register">Register</a>
+          <a href="./auth.html" class="header__signin">Sign In</a>
+          <div class="header__buy">
+            <select class="header__select header__select-white">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
+        <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item header__mens-js"><a href="./index.html" class="header__link">mens</a></li>
+            <li class="header__item header__womens-js">womens</li>
+            <li class="header__item"><a href="./brand.html" class="header__link">the brand</a></li>
+            <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local
+                stores</a></li>
+            <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look
+                book</a></li>
+        </nav>
+        <div class="header__input-container">
+        <input type="search" class="header__search" placeholder="Search..">
+      </div>
+      </div>
+    </header>
+
+    <section class="main main-js">
+      <div class="main-background">
+        <h1 class="main-background__title">Local <span class="main-background__title_mod">stores</span></h1>
+        <p class="main-background__subtitle">Find a store near you</p>
+      </div>
+
+     <div class="product">
+      <div class="slider">
+        <div class="slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div data-slide-item-link="../../images/photo-slider.png" class="slider__item">
+                <div class="zoomer"></div>
+              </div>
+              <div data-slide-item-link="../../images/photo-d.png" class="slider__item slider__item-js">
+                <div class="zoomer zoomer-js"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+      </div>
+
+      <div class="product__info">
+        <h2 class="product__name">Ave classic sweatshirt</h2>
+        <div class="product__rating">
+
+          <div  class="rating rating_set">
+            <div class="rating__body">
+              <div class="rating__active"></div>
+            <div class="rating__items">
+              <input  name="rating" type="radio" value="1" class="rating__item">
+              <input  name="rating" type="radio" value="2" class="rating__item">
+              <input  name="rating" type="radio" value="3" class="rating__item">
+              <input  name="rating" type="radio" value="4" class="rating__item">
+              <input  name="rating" type="radio" value="5" class="rating__item">
+            </div>
+          </div>
+          <p class="rating__title">Rating:</p>
+          <div class="rating__value">2.5</div>
+          </div>
+
+          <div class="product__rating-barrier"></div>
+          <p class="product__rating-review">Add a Review</p>
+          <div class="product__rating-barrier"></div>
+          <div class="product__rating-share">
+            <p class="product__share">Share:</p>
+            <img src="<%=require('./images/FB-icon.svg')%>" alt="" class="product__share-icon">
+            <img src="<%=require('./images/TWITTER-icon.svg')%>" alt="" class="product__share-icon">
+            <img src="<%=require('./images/GOOGLE-icon.svg')%>" alt="" class="product__share-icon">
+            <img src="<%=require('./images/PINTEREST-icon.svg')%>" alt="" class="product__share-icon">
+            <img src="<%=require('./images/LINKEDIN-icon.svg')%>" alt="" class="product__share-icon">
+            <img src="<%=require('./images/whatsapp-icon.svg')%>" alt="" class="product__share-icon">
+          </div>
+        </div>
+        <p class="category__card-text product__price"> <span class="category__card-text_line-through">£107</span> £89.99 </p>
+        <div class="product__info-container">
+          <p class="product__subtitle">availability: <span class="product__subtitle_availability">In stock</span></p>
+          <p class="product__subtitle">product code: <span class="product__subtitle_product_code">#499577</span></p>
+          <p class="product__subtitle">tags: <span class="product__subtitle_tags">Classic, Casual, V-neck, Loose</span></p>
+        </div>
+        <div class="product__info-text-container">
+          <p class="product__info-text">Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh
+            suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+          <p class="product__info-text"><span class="product__info-text_mnemo">&bull;</span> Elasticated cuffs</p>
+          <p class="product__info-text"><span class="product__info-text_mnemo">&bull;</span> Casual fit</p>
+          <p class="product__info-text"><span class="product__info-text_mnemo">&bull;</span> 100% Cotton</p>
+          <p class="product__info-text"><span class="product__info-text_mnemo">&bull;</span> Free shipping with 4 days delivery</p>
+        </div>
+        <div class="product__select-container">
+          <p class="product__select-title">colour</p>
+          <p class="product__select-title">size</p>
+          <p class="product__select-title">qty</p>
+          <select   class="product__select">
+            <option disabled selected style='display:none;' class="product__option">Select Colour</option>
+            <option class="product__option">red</option>
+            <option class="product__option">black</option>
+            <option class="product__option">yellow</option>
+            <option class="product__option">white</option>
+          </select>
+          <select   class="product__select">
+            <option disabled selected style='display:none;' class="product__option">Select Size</option>
+            <option class="product__option">xs</option>
+            <option class="product__option">s</option>
+            <option class="product__option">m</option>
+            <option class="product__option">l</option>
+          </select>
+          <input class="product__input-number" type="number" step="1" min="1" max="10">
+        </div>
+        <div class="product__button-container">
+        <button class="button product__button">add to cart</button>
+        <button class="button product__button">add to lookbook</button>
+        </div>
+        <div class="product__info-compare">
+        <div class="card-overflow__icon"></div>
+        <p class="product__subtitle product__compare-title">add to compare</p>
+      </div>
+
+
+
+
+      </div>
+
+
+     </div>
+
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer__main">
+
+        <div class="footer__info">
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <p class="footer__list-title">Information</p>
+              <li class="footer__item">The brand</li>
+              <li class="footer__item">Local stores</li>
+              <li class="footer__item"> Customer service</li>
+              <li class="footer__item">Privacy & cookies</li>
+              <li class="footer__item">Site map</li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <p class="footer__list-title">Why buy from us</p>
+              <li class="footer__item">Shipping & returns</li>
+              <li class="footer__item">Secure shopping</li>
+              <li class="footer__item">Testimonials</li>
+              <li class="footer__item">Award winning</li>
+              <li class="footer__item">Ethical trading</li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <p class="footer__list-title">Your account</p>
+              <li class="footer__item">Sign in</li>
+              <li class="footer__item">Register</li>
+              <li class="footer__item">View cart</li>
+              <li class="footer__item">View your lookbook</li>
+              <li class="footer__item">Track an order</li>
+              <li class="footer__item">Update information</li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <p class="footer__list-title">Lookbook</p>
+              <li class="footer__item">Latest posts</li>
+              <li class="footer__item">Men’s lookbook</li>
+              <li class="footer__item">Women’s lookbook</li>
+              <li class="footer__item">Lookbooks RSS feed</li>
+              <li class="footer__item">View your lookbook</li>
+              <li class="footer__item">Delete your lookbook</li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <p class="footer__list-title">contact details</p>
+              <li class="footer__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="footer__link"
+                target="_blank">Head Office: Avenue Fashion,
+                180-182 Regent Street, London.</a></li>
+              <li class="footer__item">Telephone: <a href="tel:0123-456-789" class="footer__link"
+                target="_blank">0123-456-789</a></li>
+              <li class="footer__item">Email: <a href="mailto:kostya.okhlynin@gmail.com" class="footer__link"
+                target="_blank">kostya.okhlynin@gmail.com</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__social">
+
+          <div class="footer__social-container">
+            <p class="footer__social-container-title">award winner</p>
+            <p class="footer__social-container-subtitle">fashion awards 2016</p>
+          </div>
+
+          <div class="footer__social-container">
+            <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
+            <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
+            <img src="<%=require('./images/instagram-social-network-logo-of-photo-camera.png')%>" alt=""
+              class="footer__social-icon">
+            <img src="<%=require('./images/pinterest-social-logo.png')%>" alt="" class="footer__social-icon">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__footer">
+        <p class="footer__copyright">&#169 2016 Avenue Fashion™</p>
+        <p class="footer__copyright">Design by RobbyDesigns.com</p>
+        <p class="footer__copyright">Dev by Kostya Okhlynin</p>
+
+      </div>
+    </footer>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <h1 class="mobile-menu__logo">Avenue Fashion</h1>
+          <img class="mobile-menu__close popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        </div>
+        <div class="mobile-menu__main">
+          <p class="mobile-menu__currency">Currency :<select class="header__select mobile-menu__currency">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <div class="mobile-menu__buy">
+            <select class="header__select">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">mens</a></li>
+            <li class="mobile-menu__item header__womens-js">womens</li>
+            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the brand</a></li>
+            <li class="mobile-menu__item header__localstores-js"><a href="/localstores.html"
+                class="mobile-menu__link">local stores</a></li>
+            <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html"
+                class="mobile-menu__link">look book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+
+</html>

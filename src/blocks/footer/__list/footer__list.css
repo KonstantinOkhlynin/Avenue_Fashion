@@ -1,18 +1,17 @@
 .footer__list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 920px) {
+@media screen and (max-width: 920px) {
   .footer__list {
     margin-bottom: 30px;
-  max-width: 148px;
-   align-items:center;
-}
+    padding-left: 40px;
+  }
 }

@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head>
+
 <body>
   <div class="root">
     <header class="header">
       <div class="header__container">
-      <div class="header__auth">
-        <p class="header__currency">Currency :<select class="header__select">
-          <option class="header__option">GPB</option>
-          <option class="header__option">RUB</option>
-          <option class="header__option">EUR</option>
-          <option class="header__option">USD</option>
-        </select></p>
-        <p class="header__register">Register</p>
-        <p class="header__signin">Sign In</p>
-
-        <div class="header__buy">
-          <select class="header__select header__select-white">
-            <option class="header__option ">empty</option>
-          </select>
+        <div class="header__auth">
+          <p class="header__currency">Currency :<select class="header__select">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <a href="./auth.html" class="header__register">Register</a>
+          <a href="./auth.html" class="header__signin">Sign In</a>
+          <div class="header__buy">
+            <select class="header__select header__select-white">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
       <div class="header__main">
-        <h1 class="header__logo">avenue <span class="header__logo-span">fashion</span></h1>
-        <nav class="nav header__nav">
-          <ul class="nav__list header__list">
-            <li class="header__item"><a href="./index.html" class="header__link">mens</a></li>
+        <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
+        <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item header__mens-js"><a href="./index.html" class="header__link">mens</a></li>
             <li class="header__item header__womens-js">womens</li>
             <li class="header__item"><a href="./brand.html" class="header__link">the brand</a></li>
-            <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local stores</a></li>
-            <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look book</a></li>
-          </ul>
+            <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local
+                stores</a></li>
+            <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look
+                book</a></li>
         </nav>
-        <input type="search" class="header__search"  placeholder="Search..">
+        <div class="header__input-container">
+          <input type="search" class="header__search" placeholder="Search..">
+        </div>
       </div>
     </header>
 
     <section class="main">
 
 
-<div class="main-background">
-  <h1 class="main-background__title">Local <span class="main-background__title_mod">stores</span></h1>
-  <p class="main-background__subtitle">Find a store near you</p>
-</div>
+      <div class="main-background">
+        <h1 class="main-background__title">Local <span class="main-background__title_mod">stores</span></h1>
+        <p class="main-background__subtitle">Find a store near you</p>
+      </div>
 
-<div class="stores">
-  <div class="stores__container">
-    <h2 class="stores__title">London</h2>
-    <p class="stores__subtitle">180-182 Regent Street, London, W1B 5BT</p>
-    <p class="stores__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
-    <button class="lookbook__button stores__button stores__button-js-LO">view Details</button>
-  </div>
-  <div class="stores__container">
-    <h2 class="stores__title">New York</h2>
-    <p class="stores__subtitle">109 Columbus Circle, New York, NY 10023</p>
-    <p class="stores__text">Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
-    <button class="lookbook__button stores__button stores__button-js-NY">view Details</button>
-  </div>
-  <div class="stores__container">
-    <h2 class="stores__title">Paris</h2>
-    <p class="stores__subtitle">2133 Rue Saint-Honoré, 75001 Paris</p>
-    <p class="stores__text">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p>
-    <button class="lookbook__button stores__button stores__button-js-PA">view Details</button>
-  </div>
-</div>
+      <div class="stores">
+        <div class="stores__container">
+          <h2 class="stores__title">London</h2>
+          <p class="stores__subtitle">180-182 Regent Street, London, W1B 5BT</p>
+          <p class="stores__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem.
+            Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+            Aliquam erat volutpat.</p>
+          <button class="button stores__button stores__button-js-LO">view Details</button>
+        </div>
+        <div class="stores__container">
+          <h2 class="stores__title">New York</h2>
+          <p class="stores__subtitle">109 Columbus Circle, New York, NY 10023</p>
+          <p class="stores__text">Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis
+            condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam
+            dui, non sodales nisl.</p>
+          <button class="button stores__button stores__button-js-NY">view Details</button>
+        </div>
+        <div class="stores__container">
+          <h2 class="stores__title">Paris</h2>
+          <p class="stores__subtitle">2133 Rue Saint-Honoré, 75001 Paris</p>
+          <p class="stores__text">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur
+            laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere
+            cubilia curae cras ligula.</p>
+          <button class="button stores__button stores__button-js-PA">view Details</button>
+        </div>
+      </div>
 
 
-<div class="stores-info">
-  <iframe class="stores-info__map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.04068490166!2d-0.1420051838747335!3d51.51246957963602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5767c9015%3A0x1cf0ab0381c7fd45!2zMTgwIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiA1VFcsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1619702907725!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
-<div class="stores-info__container">
-  <h2 class="stores-info__title">London</h2>
-  <p class="stores-info__subtitle">180-182 Regent Street, London, W1B 5BT</p>
-  <p class="stores-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+      <div class="stores-info">
+        <iframe class="stores-info__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.04068490166!2d-0.1420051838747335!3d51.51246957963602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5767c9015%3A0x1cf0ab0381c7fd45!2zMTgwIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiA1VFcsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1619702907725!5m2!1sru!2sru"
+          allowfullscreen="" loading="lazy"></iframe>
+        <div class="stores-info__container">
+          <h2 class="stores-info__title">London</h2>
+          <p class="stores-info__subtitle">180-182 Regent Street, London, W1B 5BT</p>
+          <p class="stores-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem.
+            Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+            Aliquam erat volutpat.</p>
 
-  <nav class="stores-info__contacts">
-    <ul class="stores-info__list">
-      <li class="stores-info__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="stores-info__link" target="_blank">180-182 Regent Street, London, W1B 5BT</a></li>
-      <li class="stores-info__item"><a href="tel:0123-456-789" class="stores-info__link" target="_blank">0123-456-789</a></li>
-      <li class="stores-info__item"><a href="https://github.com/KonstantinOkhlynin" class="stores-info__link" target="_blank">github.com</a></li>
-      <li class="stores-info__item"><a href="mailto:kostya.okhlynin@gmail.com" class="stores-info__link" target="_blank">kostya.okhlynin@gmaol.com</a></li>
-      <li class="stores-info__item">Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
-    </ul>
-  </nav>
-</div>
+          <nav class="stores-info__contacts">
+            <ul class="stores-info__list">
+              <li class="stores-info__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="stores-info__link"
+                  target="_blank">180-182 Regent Street, London, W1B 5BT</a></li>
+              <li class="stores-info__item"><a href="tel:0123-456-789" class="stores-info__link"
+                  target="_blank">0123-456-789</a></li>
+              <li class="stores-info__item"><a href="https://github.com/KonstantinOkhlynin" class="stores-info__link"
+                  target="_blank">github.com</a></li>
+              <li class="stores-info__item"><a href="mailto:kostya.okhlynin@gmail.com" class="stores-info__link"
+                  target="_blank">kostya.okhlynin@gmail.com</a></li>
+              <li class="stores-info__item">Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm</li>
+            </ul>
+          </nav>
+        </div>
 
-</div>
+      </div>
 
     </section>
 
@@ -103,7 +122,7 @@
             <ul class="footer__list">
               <p class="footer__list-title">Information</p>
               <li class="footer__item">The brand</li>
-              <li class="footer__item">Local stores</li>
+              <li class="footer__item footer__item_color">Local stores</li>
               <li class="footer__item"> Customer service</li>
               <li class="footer__item">Privacy & cookies</li>
               <li class="footer__item">Site map</li>
@@ -148,10 +167,13 @@
           <nav class="footer__nav">
             <ul class="footer__list">
               <p class="footer__list-title">contact details</p>
-              <li class="footer__item">Head Office: Avenue Fashion,
-                180-182 Regent Street, London.</li>
-              <li class="footer__item">Telephone: 0123-456-789 </li>
-              <li class="footer__item">Email: support@yourwebsite.com</li>
+              <li class="footer__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="footer__link"
+                target="_blank">Head Office: Avenue Fashion,
+                180-182 Regent Street, London.</a></li>
+              <li class="footer__item">Telephone: <a href="tel:0123-456-789" class="footer__link"
+                target="_blank">0123-456-789</a></li>
+              <li class="footer__item">Email: <a href="mailto:kostya.okhlynin@gmail.com" class="footer__link"
+                target="_blank">kostya.okhlynin@gmail.com</a></li>
             </ul>
           </nav>
         </div>
@@ -166,7 +188,8 @@
           <div class="footer__social-container">
             <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
             <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
-            <img src="<%=require('./images/instagram-social-network-logo-of-photo-camera.png')%>" alt="" class="footer__social-icon">
+            <img src="<%=require('./images/instagram-social-network-logo-of-photo-camera.png')%>" alt=""
+              class="footer__social-icon">
             <img src="<%=require('./images/pinterest-social-logo.png')%>" alt="" class="footer__social-icon">
           </div>
 
@@ -181,7 +204,41 @@
       </div>
     </footer>
 
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <h1 class="mobile-menu__logo">Avenue Fashion</h1>
+          <img class="mobile-menu__close popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        </div>
+        <div class="mobile-menu__main">
+          <p class="mobile-menu__currency">Currency :<select class="header__select mobile-menu__currency">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <div class="mobile-menu__buy">
+            <select class="header__select">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">mens</a></li>
+            <li class="mobile-menu__item header__womens-js">womens</li>
+            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the brand</a></li>
+            <li class="mobile-menu__item header__localstores-js"><a href="/localstores.html"
+                class="mobile-menu__link">local stores</a></li>
+            <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html"
+                class="mobile-menu__link">look book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
+
 </html>

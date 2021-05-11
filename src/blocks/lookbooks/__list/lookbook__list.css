@@ -1,3 +1,12 @@
 .lookbook__list {
-    grid-template-columns: minmax(64px,118px) minmax(102px,160px) minmax(94px,152px) minmax(112px,169px) minmax(101px,135px);
+  grid-template-columns: minmax(64px, 118px) minmax(102px, 160px) minmax(94px, 152px) minmax(112px, 169px) minmax(101px, 135px);
+}
+
+@media screen and (max-width: 680px) {
+  .lookbook__list {
+    grid-template-columns: minmax(64px, 300px);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      ".";
+  }
 }

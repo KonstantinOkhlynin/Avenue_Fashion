@@ -1,16 +1,17 @@
 .stores-info__subtitle {
-    font-size: 13px;
-    font-family: 'Myriad Pro';
-	font-weight: normal;
-	font-style: normal;
-    color: rgb(114, 114, 114);
-    text-transform: uppercase;
-    margin: 0;
-    margin-left: 43px;
-    margin-bottom: 20px;
+  font-size: 13px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(114, 114, 114);
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 43px;
+  margin-bottom: 20px;
 }
 
-
-  
-
-  
+@media screen and (max-width: 500px) {
+  .stores-info__subtitle {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,7 @@
+.mobile-menu__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}

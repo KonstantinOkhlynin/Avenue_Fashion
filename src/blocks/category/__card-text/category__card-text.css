@@ -1,0 +1,12 @@
+@import url(./_line-through/category__card-text_line-through.css);
+
+.category__card-text{
+  font-size: 21px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(154, 154, 154);
+  text-transform: uppercase;
+  margin: 15px 0 0 15px;
+}
+

@@ -1,0 +1,11 @@
+.rating__item {
+  flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.rating__item:checked,
+.rating__item:checked ~ .rating__item {
+  color: #ded3aa;
+}
+

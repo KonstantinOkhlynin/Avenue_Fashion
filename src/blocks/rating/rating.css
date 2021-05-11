@@ -1,0 +1,14 @@
+@import url(./__body/rating__body.css);
+@import url(./__active/rating__active.css);
+@import url(./__items/rating__items.css);
+@import url(./__item/rating__item.css);
+@import url(./__value/rating__value.css);
+@import url(./__title/rating__title.css);
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  line-height: 0.75;
+  color: #dfdfde;
+}

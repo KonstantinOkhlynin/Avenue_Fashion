@@ -6,7 +6,7 @@
 
 .stores {
   display: grid;
-  grid-template-columns: repeat(3, minmax(218px,400px));
+  grid-template-columns: repeat(3, minmax(218px, 400px));
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -15,4 +15,17 @@
   width: 100%;
   margin-top: 62px;
   margin-bottom: 62px;
+}
+
+@media screen and (max-width: 1160px) {
+  .stores {
+    grid-template-columns: minmax(218px, 400px);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+    ;
+  }
 }

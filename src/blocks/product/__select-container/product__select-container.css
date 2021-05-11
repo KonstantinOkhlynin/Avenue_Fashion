@@ -1,0 +1,11 @@
+.product__select-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns:minmax(100px,200px) minmax(100px,200px) 70px;
+  grid-template-rows: 14px 50px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "a c e"
+    "b d t";
+    align-items: flex-end;
+}

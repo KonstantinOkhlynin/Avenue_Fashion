@@ -3,14 +3,21 @@
 
 
 .main-background {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../../images/background-local-stores.png);
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../images/background-local-stores.png);
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media screen and (max-width: 700px) {
+  .main-background {
+    min-height: 250px;
+    text-align: center;
+  }
 }

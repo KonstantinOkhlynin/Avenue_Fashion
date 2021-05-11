@@ -1,4 +1,11 @@
 .stores-info__list {
-    list-style: none;
-    margin-left: 25px;
+  list-style: none;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .stores-info__list {
+    margin-left: 22px;
+    padding: 0;
+  }
 }

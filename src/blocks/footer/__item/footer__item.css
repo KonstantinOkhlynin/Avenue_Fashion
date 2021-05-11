@@ -1,13 +1,14 @@
 .footer__item {
-    margin: 0;
-    margin-top: 19px;
-    font-size: 14px;
-    color: rgb(114, 114, 114);
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-style: normal;
+  margin: 0;
+  margin-top: 19px;
+  font-size: 14px;
+  color: rgb(114, 114, 114);
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
 }
 
-
-
-  
+.footer__item:hover {
+  color: #00c8c8;
+  cursor: pointer;
+}

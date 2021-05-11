@@ -1,5 +1,4 @@
-export const initialCards = [
-  {
+export const initialCards = [{
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.04068490166!2d-0.1420051838747335!3d51.51246957963602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5767c9015%3A0x1cf0ab0381c7fd45!2zMTgwIFJlZ2VudCBTdCwgU29obywgTG9uZG9uIFcxQiA1VFcsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1619702907725!5m2!1sru!2sru',
     title: 'LONDON',
     subtitle: '180-182 REGENT STREET, LONDON, W1B 5BT',
@@ -27,8 +26,15 @@ export const initialCards = [
 
 
 export const womensMenu = [
-  ['Jakets','Hoodies & Sweatshirts','Polo Shirts','Sportswear','Trousers & Chinos','T-Shirts'],
-  ['Jakets','Shirts','Suits','Trousers'],
+  ['Jakets', 'Hoodies & Sweatshirts', 'Polo Shirts', 'Sportswear', 'Trousers & Chinos', 'T-Shirts'],
+  ['Jakets', 'Shirts', 'Suits', 'Trousers'],
   ['casuals'],
   ['formal']
+]
+
+export const lookbookMenu = [
+  ['latest Posts (mixed)', 'Men\'s lookbook', 'Women\'s lookbook'],
+  ['View and Edit', 'Share', 'Delete'],
+  ['our lookbook'],
+  ['your lookbook']
 ]

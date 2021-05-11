@@ -1,0 +1,10 @@
+.product__rating {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(150px,170px) minmax(2px,18px) minmax(108px,122px)minmax(2px,18px) minmax(200px,236pxx);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . .";
+  align-items: flex-end;
+}

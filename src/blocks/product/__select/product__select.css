@@ -1,0 +1,23 @@
+.product__select {
+  width: 170px;
+  height: 35px;
+  box-sizing: border-box;
+  border: solid 1px #e7e7e7;
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(152, 152, 152);
+  outline: none;
+  padding-left: 6px;
+}
+
+.product__select:nth-child(1) {
+grid-area: b;
+}
+
+.product__select:nth-child(2) {
+  grid-area: d;
+  }
+
+

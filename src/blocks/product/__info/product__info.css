@@ -1,0 +1,18 @@
+.product__info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18px 48px 50px 122px 195px 106px 118px 52px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    ".";
+    align-items: flex-end;
+    grid-area: b;
+}

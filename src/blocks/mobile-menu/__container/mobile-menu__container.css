@@ -1,0 +1,11 @@
+.mobile-menu__container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #1A1B22;
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  z-index: 2;
+}

@@ -6,3 +6,5 @@
 @import url(./__text/lookbook__text.css);
 @import url(./__box/lookbook__box.css);
 @import url(./_span/lookbook__titles_span.css);
+@import url(./__card-text/lookbook__card-text.css);
+@import url(./__card-text-container/lookbook__card-text-container.css);

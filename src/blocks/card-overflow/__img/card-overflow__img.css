@@ -1,14 +1,13 @@
 .card-overflow__img {
-    width: 82px;
-    height: 102px;
-    box-sizing: border-box;
+  width: 82px;
+  height: 102px;
+  box-sizing: border-box;
 }
 
 .card-overflow__img:hover {
-   border: solid 1px #727272;
+  border: solid 1px #727272;
 }
 
 .card-overflow__img:last-child {
-    margin-top: 15px;
+  margin-top: 15px;
 }
-

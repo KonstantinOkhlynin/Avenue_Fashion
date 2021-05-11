@@ -1,0 +1,8 @@
+.rating__body {
+position: relative;
+}
+
+.rating__body::before {
+    content: "★★★★★";
+    display: block;
+  }

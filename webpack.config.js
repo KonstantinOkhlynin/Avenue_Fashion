@@ -8,7 +8,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const autoprefixer = require('autoprefixer');
 module.exports = {
-    // entry: { main: path.resolve(__dirname, './src/index.js')},
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -32,17 +31,6 @@ module.exports = {
                     },
                     'postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
                 },
-              //   {
-              //     loader: 'postcss-loader',
-              //     options: {
-              //         plugins: [
-              //             autoprefixer({
-              //                 browsers:['ie >= 8', 'last 4 version']
-              //             })
-              //         ],
-              //         sourceMap: true
-              //     }
-              // },
                 {
                     test: /\.(eot|ttf|woff|woff2)$/,
                     loader: 'file-loader?name=./vendor/[name].[ext]'
@@ -105,6 +93,11 @@ module.exports = {
                 template: './src/auth.html',
                 filename: 'auth.html'
             }),
+            new HtmlWebpackPlugin({ // настроили плагин
+              inject: false,
+              template: './src/product.html',
+              filename: 'product.html'
+          }),
             new webpack.DefinePlugin({
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
             }),

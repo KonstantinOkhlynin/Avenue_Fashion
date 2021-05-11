@@ -1,0 +1,23 @@
+.product__select-title {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(87, 81, 83);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .product__select-title:first-child {
+   grid-area: a;
+  }
+
+  .product__select-title:nth-child(1) {
+    grid-area: c;
+   }
+
+   .product__select-title:last-child {
+    grid-area: e;
+   }
+
+

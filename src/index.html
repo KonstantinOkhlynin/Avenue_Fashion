@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head>
+
 <body>
   <div class="root">
     <header class="header">
       <div class="header__container">
-      <div class="header__auth">
-        <p class="header__currency">Currency :<select class="header__select">
-          <option class="header__option">GPB</option>
-          <option class="header__option">RUB</option>
-          <option class="header__option">EUR</option>
-          <option class="header__option">USD</option>
-        </select></p>
-        <a href="./auth.html" class="header__register">Register</a>
-        <a href="./auth.html" class="header__signin">Sign In</a>
-
-        <div class="header__buy">
-          <select class="header__select header__select-white">
-            <option class="header__option ">empty</option>
-          </select>
+        <div class="header__auth">
+          <p class="header__currency">Currency :<select class="header__select">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <a href="./auth.html" class="header__register">Register</a>
+          <a href="./auth.html" class="header__signin">Sign In</a>
+          <div class="header__buy">
+            <select class="header__select header__select-white">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
       <div class="header__main">
-        <h1 class="header__logo">avenue <span class="header__logo-span">fashion</span></h1>
+        <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
+        <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a href="./index.html" class="header__link">mens</a></li>
+            <li class="header__item header__mens-js"><a href="./product.html" class="header__link">mens</a></li>
             <li class="header__item header__womens-js">womens</li>
-            <li class="header__item"><a href="./brand.html" class="header__link">the brand</a></li>
-            <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local stores</a></li>
-            <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look book</a></li>
+            <li class="header__item"><a href="./product.html" class="header__link">the brand</a></li>
+            <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local
+                stores</a></li>
+            <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look
+                book</a></li>
         </nav>
-        <input type="search" class="header__search"  placeholder="Search..">
+        <div class="header__input-container">
+          <input type="search" class="header__search" placeholder="Search..">
+        </div>
       </div>
     </header>
 
@@ -46,12 +52,19 @@
 
       <div class="home-background">
         </a>
-        <button class="home-background__button">shop men’s collection</button>
+        <button class="button home-background__button">shop men’s collection</button>
       </div>
 
       <div class="category">
         <nav class="category__nav">
           <ul class="category__list">
+            <p class="category__title">Category :<select class="category__select">
+                <option class="category__option">popular</option>
+                <option class="category__option">new arrivals</option>
+                <option class="category__option">best sellers</option>
+                <option class="category__option">special offers</option>
+                <option class="category__option">coming soon</option>
+              </select></p>
             <li class="category__item">popular</li>
             <li class="category__item">new arrivals</li>
             <li class="category__item">best sellers</li>
@@ -60,119 +73,134 @@
           </ul>
         </nav>
         <div class="category__cards">
-          <div class="category__card"></div>
-          <div class="category__card"><div class="card-overflow">
-            <div class="card-overflow__container">
-            <div class="card-overflow__container-img">
-              <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-              <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-            </div>
-            <div class="card-overflow__img-info"></div>
-          </div>
-          <div class="card-overflow__container-info">
-            <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
-            <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
-              100% cotton.</p>
-            <div class="card-overflow__container-icons">
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-            </div>
-          </div>
-
-
-          </div></div>
-          <div class="category__card"><div class="card-overflow">
-            <div class="card-overflow__container">
-            <div class="card-overflow__container-img">
-              <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-              <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-            </div>
-            <div class="card-overflow__img-info"></div>
-          </div>
-          <div class="card-overflow__container-info">
-            <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
-            <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
-              100% cotton.</p>
-            <div class="card-overflow__container-icons">
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-            </div>
-          </div>
-
-
-          </div></div>
-          <div class="category__card"><div class="card-overflow">
-            <div class="card-overflow__container">
-            <div class="card-overflow__container-img">
-              <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-              <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-            </div>
-            <div class="card-overflow__img-info"></div>
-          </div>
-          <div class="card-overflow__container-info">
-            <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
-            <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
-              100% cotton.</p>
-            <div class="card-overflow__container-icons">
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-              <div class="card-overflow__icon"></div>
-            </div>
-          </div>
-
-
-          </div></div>
           <div class="category__card">
+            <p class="category__card-text">£89.99</p>
+          </div>
+          <div class="category__card">
+            <p class="category__card-text">£47.50</p>
             <div class="card-overflow">
               <div class="card-overflow__container">
-              <div class="card-overflow__container-img">
-                <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-                <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
+                <div class="card-overflow__container-img">
+                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
+                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
+                </div>
+                <div class="card-overflow__img-info"></div>
               </div>
-              <div class="card-overflow__img-info"></div>
-            </div>
-            <div class="card-overflow__container-info">
-              <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
-              <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
-                100% cotton.</p>
-              <div class="card-overflow__container-icons">
-                <div class="card-overflow__icon"></div>
-                <div class="card-overflow__icon"></div>
-                <div class="card-overflow__icon"></div>
+              <div class="card-overflow__container-info">
+                <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
+                <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
+                  100% cotton.</p>
+                <div class="card-overflow__container-icons">
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                </div>
               </div>
-            </div>
 
 
             </div>
           </div>
-          <div class="category__card"></div>
-      </div>
+          <div class="category__card">
+            <p class="category__card-text"> <span class="category__card-text_line-through">£107</span> £89.99 </p>
+            <div class="card-overflow">
+              <div class="card-overflow__container">
+                <div class="card-overflow__container-img">
+                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
+                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
+                </div>
+                <div class="card-overflow__img-info"></div>
+              </div>
+              <div class="card-overflow__container-info">
+                <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
+                <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
+                  100% cotton.</p>
+                <div class="card-overflow__container-icons">
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="category__card">
+            <p class="category__card-text">£69.95</p>
+            <div class="card-overflow">
+              <div class="card-overflow__container">
+                <div class="card-overflow__container-img">
+                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
+                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
+                </div>
+                <div class="card-overflow__img-info"></div>
+              </div>
+              <div class="card-overflow__container-info">
+                <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
+                <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
+                  100% cotton.</p>
+                <div class="card-overflow__container-icons">
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="category__card">
+            <p class="category__card-text">£29.95</p>
+            <div class="card-overflow">
+              <div class="card-overflow__container">
+                <div class="card-overflow__container-img">
+                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
+                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
+                </div>
+                <div class="card-overflow__img-info"></div>
+              </div>
+              <div class="card-overflow__container-info">
+                <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
+                <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
+                  100% cotton.</p>
+                <div class="card-overflow__container-icons">
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                  <div class="card-overflow__icon"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="category__card">
+            <p class="category__card-text">£34.79 </p>
+          </div>
+        </div>
       </div>
 
-      <div class="lookbook">
+      <div class="lookbooks">
         <div class="lookbook__container">
           <h2 class="lookbook__title">men’s</h2>
           <p class="lookbook__subtitle">lookbook</p>
           <p class="lookbook__paragraph">Lorem ipsum dolor sit amet eras facilisis
             consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
             Elementum metus facilisis ut phasellu</p>
-            <button class="lookbook__button">view now</button>
+          <button class="button lookbook__button">view now</button>
         </div>
         <div class="lookbook__container">
           <h2 class="lookbook__title">women’s</h2>
           <p class="lookbook__subtitle">lookbook</p>
           <p class="lookbook__paragraph">Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
             Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus</p>
-            <button class="lookbook__button">view now</button>
+          <button class="button lookbook__button">view now</button>
         </div>
         <div class="lookbook__container">
           <h2 class="lookbook__title">your</h2>
           <p class="lookbook__subtitle">lookbook</p>
-          <p class="lookbook__paragraph">See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.
+          <p class="lookbook__paragraph">See an item you like and click the  button to add it to your lookbook where
+            you can create your own perfect look.
             It’s like your own boutique!</p>
-            <button class="lookbook__button">view now</button>
+          <button class="button lookbook__button">view now</button>
         </div>
       </div>
     </section>
@@ -231,10 +259,13 @@
           <nav class="footer__nav">
             <ul class="footer__list">
               <p class="footer__list-title">contact details</p>
-              <li class="footer__item">Head Office: Avenue Fashion,
-                180-182 Regent Street, London.</li>
-              <li class="footer__item">Telephone: 0123-456-789 </li>
-              <li class="footer__item">Email: support@yourwebsite.com</li>
+              <li class="footer__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="footer__link"
+                target="_blank">Head Office: Avenue Fashion,
+                180-182 Regent Street, London.</a></li>
+              <li class="footer__item">Telephone: <a href="tel:0123-456-789" class="footer__link"
+                target="_blank">0123-456-789</a></li>
+              <li class="footer__item">Email: <a href="mailto:kostya.okhlynin@gmail.com" class="footer__link"
+                target="_blank">kostya.okhlynin@gmail.com</a></li>
             </ul>
           </nav>
         </div>
@@ -249,7 +280,8 @@
           <div class="footer__social-container">
             <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
             <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
-            <img src="<%=require('./images/instagram-social-network-logo-of-photo-camera.png')%>" alt="" class="footer__social-icon">
+            <img src="<%=require('./images/instagram-social-network-logo-of-photo-camera.png')%>" alt=""
+              class="footer__social-icon">
             <img src="<%=require('./images/pinterest-social-logo.png')%>" alt="" class="footer__social-icon">
           </div>
 
@@ -270,36 +302,43 @@
 
     </footer>
 
-
-    <!-- <div class="modal">
-      <nav class="modal__nav">
-        <ul class="modal__list">
-          <p class="modal__title">casuals</p>
-          <li class="modal__item">Jakets</li>
-          <li class="modal__item">Hoodies & Sweatshirts</li>
-          <li class="modal__item">Polo Shirts</li>
-          <li class="modal__item">Sportswear</li>
-          <li class="modal__item">Trousers & Chinos</li>
-          <li class="modal__item">T-Shirts</li>
-        </ul>
-
-        <ul class="modal__list">
-          <p class="modal__title">formal</p>
-          <li class="modal__item">Jakets</li>
-          <li class="modal__item">Shirts</li>
-          <li class="modal__item">Suits</li>
-          <li class="modal__item">Trousers</li>
-        </ul>
-      </nav>
-
-      <div class="modal__sale">
-        <p class="modal__sale-title">autumn sale!</p>
-        <p class="modal__sale-subtitle">up to 50% off</p>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <h1 class="mobile-menu__logo">Avenue Fashion</h1>
+          <img class="mobile-menu__close popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        </div>
+        <div class="mobile-menu__main">
+          <p class="mobile-menu__currency">Currency :<select class="header__select mobile-menu__currency">
+              <option class="header__option">GPB</option>
+              <option class="header__option">RUB</option>
+              <option class="header__option">EUR</option>
+              <option class="header__option">USD</option>
+            </select></p>
+          <div class="mobile-menu__buy">
+            <select class="header__select">
+              <option class="header__option ">empty</option>
+            </select>
+          </div>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">mens</a></li>
+            <li class="mobile-menu__item header__womens-js">womens</li>
+            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the brand</a></li>
+            <li class="mobile-menu__item header__localstores-js"><a href="/localstores.html"
+                class="mobile-menu__link">local stores</a></li>
+            <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html"
+                class="mobile-menu__link">look book</a></li>
+          </ul>
+        </nav>
       </div>
-    </div> -->
+    </div>
+
 
 
   </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
+
 </html>

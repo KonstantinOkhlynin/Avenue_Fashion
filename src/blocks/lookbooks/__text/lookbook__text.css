@@ -1,21 +1,27 @@
 .lookbook__text {
-    font-size: 15px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(142, 140, 140);
-    line-height: 1.6;
-    margin: 0;
-    max-width: 320px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(142, 140, 140);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
 }
 
 
 .lookbook__text:nth-child(2n) {
-    margin-top: 30px;
-    max-width: 470px;
+  margin-top: 30px;
+  max-width: 470px;
 }
 
 .lookbook__text:nth-child(3) {
-    max-width: 470px;
+  max-width: 470px;
 }
 
+
+@media screen and (max-width: 700px) {
+  .lookbook__text:nth-child(2n) {
+    margin-top: 15px;
+  }
+}

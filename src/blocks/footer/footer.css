@@ -14,8 +14,13 @@
 @import url(./__copyright/footer__copyright.css);
 
 .footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgb(114, 114, 114);
 }

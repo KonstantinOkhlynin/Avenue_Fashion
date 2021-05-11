@@ -1,9 +1,8 @@
 .header__select {
-    background: none;
-    border: none;
-    color: rgb(153, 153, 153);
-    outline: none;
-    position: relative;
-    cursor: pointer;
+  background: none;
+  border: none;
+  color: rgb(153, 153, 153);
+  outline: none;
+  position: relative;
+  cursor: pointer;
 }
-

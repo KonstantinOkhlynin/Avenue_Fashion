@@ -1,0 +1,22 @@
+.mobile-menu__item {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  width: 130px;
+}
+
+
+.mobile-menu__item::before {
+  content: " ";
+  background-image: url(../../../images/arrow-bottom.png);
+  display: block;
+  width: 8px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
+  right: -8px;
+}

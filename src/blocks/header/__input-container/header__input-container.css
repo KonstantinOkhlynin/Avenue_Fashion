@@ -1,0 +1,23 @@
+.header__input-container {
+  width: 100%;
+  position: relative;
+}
+
+
+.header__input-container::before {
+  content: " ";
+  background-image: url(../../../images/loupe.png);
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 920px) {
+  .header__input-container {
+    display: none;
+  }
+}

@@ -1,20 +1,23 @@
 .auth__input {
-    width: 100%;
-    box-sizing: border-box;
-    height: 40px;
-    font-size: 15px;
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(152, 152, 152);
-    padding-left: 10px;
-    margin-top: 46px;
-    border: solid 1px #e7e7e7;
-    outline: noneё;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(152, 152, 152);
+  padding-left: 10px;
+  border: solid 1px #e7e7e7;
+  outline: none;
 }
 
 
 .auth__input:invalid {
-    border: solid 1px #bb5465;
-    background-color: #fcf6f7;
+  border: solid 1px #bb5465;
+  background-color: #fcf6f7;
+}
+
+.auth__input_margin {
+  margin-bottom: 20px;
 }

@@ -1,20 +1,50 @@
 .brand__img {
-    width: 570px;
-    height: 400px;
-    background-repeat: no-repeat ;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
 }
 
 .brand__img:nth-child(2) {
-    margin-top: 62px;
+  margin-top: 62px;
 }
 
 
 .brand__img:nth-child(3) {
-    margin-top: 62px;
+  margin-top: 62px;
 }
 
 
 .brand__img:last-child {
+  height: 100px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+  .brand__img:nth-child(2) {
+    margin-top: 30px;
+  }
+
+
+  .brand__img:nth-child(3) {
+    margin-top: 30px;
+  }
+
+
+  .brand__img:last-child {
     height: 100px;
-    margin-top: 60px;
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .brand__img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .brand__img {
+    height: 200px;
+  }
 }

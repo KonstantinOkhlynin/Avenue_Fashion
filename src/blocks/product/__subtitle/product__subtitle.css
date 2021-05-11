@@ -1,0 +1,21 @@
+@import url(./_availability/product__subtitle_availability.css);
+@import url(./_code/product__subtitle_product_code.css);
+@import url(./_tags/product__subtitle_tags.css);
+
+.product__subtitle {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(87, 81, 83);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.product__subtitle:nth-child(2) {
+  margin-top: 18px;
+}
+
+.product__subtitle:nth-child(3) {
+  margin-top: 18px;
+}

@@ -1,9 +1,43 @@
 .lookbook__cards {
-  grid-template-columns: minmax(210px,420px) minmax(210px,420px) minmax(210px,420px) minmax(210px,420px);
+  grid-template-columns: minmax(210px, 420px) minmax(210px, 420px) minmax(210px, 420px) minmax(210px, 420px);
   grid-template-rows: 500px 500px 500px;
   grid-template-areas:
     "a b d d"
     "c e f g"
     "h h h j";
+  justify-content: center;
 }
 
+
+@media screen and (max-width: 1220px) {
+  .lookbook__cards {
+    grid-template-columns: minmax(210px, 420px) minmax(210px, 420px);
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    grid-template-areas:
+      "a b"
+      "d d"
+      "c e"
+      "f g"
+      "h h"
+      "j ."
+    ;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .lookbook__cards {
+    grid-template-columns: minmax(210px, 420px);
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+    grid-template-areas:
+      "a"
+      "b"
+      "d"
+      "c"
+      "e"
+      "f"
+      "g"
+      "h"
+      "j";
+  }
+}

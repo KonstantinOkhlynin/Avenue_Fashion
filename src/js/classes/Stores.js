@@ -1,46 +1,45 @@
 export class Stores {
-  constructor(button, arr, container) {
-    this.button = button
+  constructor(button, arr) {
     this.arr = arr
-    this.container = container
-
-
-
-    this.listen()
+    this.button = button
   }
 
-   stores = (num) => {
-    const storesInfoMap = this.container.querySelector('.stores-info__map')
-    const storesinfoTitle = this.container.querySelector('.stores-info__title')
-    const storesinfoSubtitle = this.container.querySelector('.stores-info__subtitle')
-    const storesInfoText = this.container.querySelector('.stores-info__text')
-    const storesInfolink = this.container.querySelector('.stores-info__link')
+  stores = (item) => {
+    const storesInfoMap = document.querySelector('.stores-info__map')
+    const storesinfoTitle = document.querySelector('.stores-info__title')
+    const storesinfoSubtitle = document.querySelector('.stores-info__subtitle')
+    const storesInfoText = document.querySelector('.stores-info__text')
+    const storesInfolink = document.querySelector('.stores-info__link')
 
 
-
-    storesInfoMap.src = this.arr[num].map;
     console.log(storesInfoMap.src)
 
-    storesinfoTitle.textContent = this.arr[num].title;
-    storesinfoSubtitle.textContent = this.arr[num].subtitle;
-    storesInfoText.textContent = this.arr[num].text;
-    storesInfolink.href = this.arr[num].link_map;
-    storesInfolink.textContent = this.arr[num].link_text;
 
 
+    storesInfoMap.src = item.map;
+    storesinfoTitle.textContent = item.title;
+    storesinfoSubtitle.textContent = item.subtitle;
+    storesInfoText.textContent = item.text;
+    storesInfolink.href = item.link_map;
+    storesInfolink.textContent = item.link_text;
 
-}
 
- nextStores = (num) => {
-    if (this.button){
-      this.stores(num)
-    }
   }
 
-  listen = () => {
-    document.addEventListener('click', this.nextStores())
+  nextStores = (num) => {
+
+    this.arr.forEach((item, i, arr) => {
+      this.stores(arr[num])
+    })
+
+  }
+
+  listener = (num) => {
+    document.addEventListener('click', (event) => {
+      if (event.target.classList.contains(this.button)) {
+        this.nextStores(num)
+      }
+    })
   }
 
 }
-
-

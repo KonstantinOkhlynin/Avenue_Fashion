@@ -1,7 +1,10 @@
 .brand__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
 }

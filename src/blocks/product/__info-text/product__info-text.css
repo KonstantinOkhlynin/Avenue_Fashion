@@ -1,0 +1,11 @@
+@import url(./_mnemo/product__info-text_mnemo.css);
+.product__info-text {
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(142, 140, 140);
+    margin: 0;
+    margin-top: 12px;
+  }
+

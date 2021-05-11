@@ -1,0 +1,9 @@
+.product__button-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 267px 303px;
+  grid-template-rows: 60px;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+}

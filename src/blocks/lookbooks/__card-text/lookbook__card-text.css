@@ -1,0 +1,11 @@
+@import url(./_lowercase/lookbook__card-text_lowercase.css);
+
+.lookbook__card-text {
+    font-size: 21px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(154, 154, 154);
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+}
