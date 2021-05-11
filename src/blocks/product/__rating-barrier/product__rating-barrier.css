@@ -3,3 +3,9 @@
   height: 15px;
   background: linear-gradient(to right, #dddddd , #989898);;
 }
+
+@media screen and (max-width: 650px) {
+  .product__rating-barrier {
+   display: none;
+  }
+} 

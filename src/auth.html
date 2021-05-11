@@ -10,8 +10,10 @@
 
 <body>
   <div class="root">
+    <!-- 1. HEADER START -->
     <header class="header">
       <div class="header__container">
+        <!-- 1.1 HEADER (Выбор валюты, регистрация, корзина) -->
         <div class="header__auth">
           <p class="header__currency">Currency :<select class="header__select">
               <option class="header__option">GPB</option>
@@ -28,35 +30,36 @@
           </div>
         </div>
       </div>
+      <!-- 1.2 HEADER (Логотип и навигация) -->
       <div class="header__main">
         <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
         <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item header__mens-js"><a href="./index.html" class="header__link">mens</a></li>
+            <li class="header__item header__mens-js"><a href="./product.html" class="header__link">mens</a></li>
             <li class="header__item header__womens-js">womens</li>
-            <li class="header__item"><a href="./brand.html" class="header__link">the brand</a>
-            </li>
+            <li class="header__item"><a href="./brand.html" class="header__link">the brand</a></li>
             <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local
                 stores</a></li>
             <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look
                 book</a></li>
         </nav>
+        <!-- 1.3 HEADER (Поиск) -->
         <div class="header__input-container">
           <input type="search" class="header__search" placeholder="Search..">
         </div>
       </div>
     </header>
-
+<!-- 1. HEADER END -->
 
     <section class="main">
-
+<!-- 2. BACKGROUND START (Верхний фон) -->
       <div class="main-background">
         <h1 class="main-background__title">welcome <span class="main-background__title_mod">to
             ave</span></h1>
         <p class="main-background__subtitle">sign in or register</p>
       </div>
-
+<!-- 2. BACKGROUND END -->
       <div class="auth">
         <div class="auth__container">
           <form class="auth__form auth__form_padding">
@@ -94,11 +97,11 @@
 
 
     </section>
-
+<!-- 3. FOOTER START -->
     <footer class="footer">
 
       <div class="footer__main">
-
+<!-- 3.1 FOOTER (Навигация) -->
         <div class="footer__info">
           <nav class="footer__nav">
             <ul class="footer__list">
@@ -145,7 +148,7 @@
               <li class="footer__item">Delete your lookbook</li>
             </ul>
           </nav>
-
+<!-- 3.2 FOOTER (Контакты) -->
           <nav class="footer__nav">
             <ul class="footer__list">
               <p class="footer__list-title">contact details</p>
@@ -166,7 +169,7 @@
             <p class="footer__social-container-title">award winner</p>
             <p class="footer__social-container-subtitle">fashion awards 2016</p>
           </div>
-
+<!-- 3.3 FOOTER (Соц. сети) -->
           <div class="footer__social-container">
             <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
             <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
@@ -186,7 +189,9 @@
       </div>
 
     </footer>
+<!-- 3. FOOTER END -->
 
+<!-- 4. MOBILE MENU START -->
     <div class="mobile-menu">
       <div class="mobile-menu__container">
         <div class="mobile-menu__header">
@@ -220,9 +225,9 @@
         </nav>
       </div>
     </div>
-
-
+    <!-- 4. NOBILE MENU END -->
   </div>
+  
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 

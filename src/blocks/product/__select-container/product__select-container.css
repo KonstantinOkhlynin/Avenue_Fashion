@@ -9,3 +9,20 @@
     "b d t";
     align-items: flex-end;
 }
+
+
+@media screen and (max-width: 650px) {
+  .product__select-container {
+    grid-template-columns:minmax(100px,200px);
+    grid-template-rows: 30px 50px 30px 50px 30px 50px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "t" 
+      ;
+} 
+}

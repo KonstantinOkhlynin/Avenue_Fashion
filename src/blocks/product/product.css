@@ -17,6 +17,13 @@
 @import url(./__button-container/product__button-container.css);
 @import url(./__info-compare/product__info-compare.css);
 @import url(./__compare-title/product__compare-title.css);
+@import url(./__description-container/product__description-container.css);
+@import url(./__description-menu/product__description-menu.css);
+@import url(./__description-list/product__description-list.css);
+@import url(./__description-button/product__description-button.css);
+@import url(./__description-text-container/product__description-text-container.css);
+@import url(./__description-title/product__description-title.css);
+@import url(./__description-text/product__description-text.css);
 
 
 .product {
@@ -29,4 +36,33 @@
     "c c";
     justify-content: center;
     margin-top: 62px;
+    margin-bottom: 120px;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .product {
+    grid-template-columns: 1fr minmax(200px,570px) 1fr;
+    grid-template-rows: 710px 710px 1fr;
+    grid-template-areas:
+      ". a ."
+      ". b ."
+      "c c c";
+      justify-content: center;
+      margin-top: 62px;
+      margin-bottom: 120px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .product {
+    gap: 40px 20px;
+    grid-template-rows: 710px 1fr 1fr;
+    grid-template-areas:
+      ". a ."
+      ". b ."
+      "c c c";
+      margin-bottom: 60px;
+  }
 }

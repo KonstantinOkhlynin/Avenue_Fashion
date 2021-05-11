@@ -1,9 +1,24 @@
 .product__button-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 267px 303px;
+  grid-template-columns: minmax(241px, 267px) 303px;
   grid-template-rows: 60px;
   gap: 0px 0px;
   grid-template-areas:
     ". .";
 }
+
+
+@media screen and (max-width: 650px) {
+  .product__button-container {
+    align-items: flex-end;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(241px,303px) ;
+    grid-template-rows: 80px 80px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      ".";
+  }
+} 

@@ -1,10 +1,22 @@
 .product__rating {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(150px,170px) minmax(2px,18px) minmax(108px,122px)minmax(2px,18px) minmax(200px,236pxx);
+  grid-template-columns: minmax(150px,170px) minmax(2px,18px) minmax(108px,122px)minmax(2px,18px) minmax(200px,236px);
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
     ". . . . . .";
   align-items: flex-end;
 }
+
+
+@media screen and (max-width: 650px) {
+  .product__rating {
+    grid-template-columns: minmax(200px,236px);
+    grid-template-rows: 30px 30px 30px;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+  }
+} 

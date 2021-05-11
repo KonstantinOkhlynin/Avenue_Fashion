@@ -10,8 +10,10 @@
 
 <body>
   <div class="root">
+    <!-- 1. HEADER START -->
     <header class="header">
       <div class="header__container">
+        <!-- 1.1 HEADER (Выбор валюты, регистрация, корзина) -->
         <div class="header__auth">
           <p class="header__currency">Currency :<select class="header__select">
               <option class="header__option">GPB</option>
@@ -28,12 +30,13 @@
           </div>
         </div>
       </div>
+      <!-- 1.2 HEADER (Логотип и навигация) -->
       <div class="header__main">
         <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
         <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item header__mens-js"><a href="./index.html" class="header__link">mens</a></li>
+            <li class="header__item header__mens-js"><a href="./product.html" class="header__link">mens</a></li>
             <li class="header__item header__womens-js">womens</li>
             <li class="header__item"><a href="./brand.html" class="header__link">the brand</a></li>
             <li class="header__item header__localstores-js"><a href="/localstores.html" class="header__link">local
@@ -41,19 +44,23 @@
             <li class="header__item header__lookbook-js"><a href="./lookbookpage.html" class="header__link">look
                 book</a></li>
         </nav>
+        <!-- 1.3 HEADER (Поиск) -->
         <div class="header__input-container">
-        <input type="search" class="header__search" placeholder="Search..">
-      </div>
+          <input type="search" class="header__search" placeholder="Search..">
+        </div>
       </div>
     </header>
+<!-- 1. HEADER END -->
 
+<!-- 2. BACKGROUND START (Верхний фон) -->
     <section class="main main-js">
       <div class="main-background">
         <h1 class="main-background__title">Local <span class="main-background__title_mod">stores</span></h1>
-        <p class="main-background__subtitle">Find a store near you</p>
+        <p class="main-background__subtitle">mens - casuals - hoodies & sweatshirts - <span class="main-background__subtitle_mod">ave classic sweatshirt</span></p>
       </div>
-
+<!-- 2. BACKGROUND END -->
      <div class="product">
+<!-- 3. SLIDER START (Слайдер переключения фотографий) -->
       <div class="slider">
         <div class="slider__container">
           <div class="slider__wrapper">
@@ -70,11 +77,12 @@
         <a href="#" class="slider__control" data-slide="prev"></a>
         <a href="#" class="slider__control" data-slide="next"></a>
       </div>
+<!-- 3. SLIDER END (Слайдер переключения фотографий) -->
 
       <div class="product__info">
         <h2 class="product__name">Ave classic sweatshirt</h2>
         <div class="product__rating">
-
+<!-- 4. RATING START (Звездный рейтинг) -->
           <div  class="rating rating_set">
             <div class="rating__body">
               <div class="rating__active"></div>
@@ -89,6 +97,7 @@
           <p class="rating__title">Rating:</p>
           <div class="rating__value">2.5</div>
           </div>
+<!-- 4. RATING END (Звездный рейтинг) -->
 
           <div class="product__rating-barrier"></div>
           <p class="product__rating-review">Add a Review</p>
@@ -145,21 +154,38 @@
         <div class="card-overflow__icon"></div>
         <p class="product__subtitle product__compare-title">add to compare</p>
       </div>
-
-
-
-
       </div>
 
+      <div class="product__description-container">
+        <nav class="product__description-menu">
+          <ul class="product__description-list">
+            <li class="product__description-item"><button class="button product__description-button">description</button></li>
+            <li class="product__description-item"><button class="button product__description-button">video</button></li>
+            <li class="product__description-item"><button class="button product__description-button">size&ensp;&&ensp;specs</button></li>
+            <li class="product__description-item"><button class="button product__description-button">delivery&ensp;&&ensp;returns</button></li>
+            <li class="product__description-item"><button class="button product__description-button">reviews</button></li>
+          </ul>
+        </nav>
+
+        <div class="product__description-text-container">
+          <h2 class="product__description-title">Nunc egestas posuere enim, eu maximus erat posuere eget</h2>
+          <p class="product__description-text">Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+          </p>
+          <p class="product__description-text">Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+
+        </div>
+
+      </div>
 
      </div>
 
     </section>
 
+    <!-- 3. FOOTER START -->
     <footer class="footer">
 
       <div class="footer__main">
-
+<!-- 3.1 FOOTER (Навигация) -->
         <div class="footer__info">
           <nav class="footer__nav">
             <ul class="footer__list">
@@ -186,8 +212,8 @@
           <nav class="footer__nav">
             <ul class="footer__list">
               <p class="footer__list-title">Your account</p>
-              <li class="footer__item">Sign in</li>
-              <li class="footer__item">Register</li>
+              <li class="footer__item footer__item_color">Sign in</li>
+              <li class="footer__item footer__item_color">Register</li>
               <li class="footer__item">View cart</li>
               <li class="footer__item">View your lookbook</li>
               <li class="footer__item">Track an order</li>
@@ -206,7 +232,7 @@
               <li class="footer__item">Delete your lookbook</li>
             </ul>
           </nav>
-
+<!-- 3.2 FOOTER (Контакты) -->
           <nav class="footer__nav">
             <ul class="footer__list">
               <p class="footer__list-title">contact details</p>
@@ -227,7 +253,7 @@
             <p class="footer__social-container-title">award winner</p>
             <p class="footer__social-container-subtitle">fashion awards 2016</p>
           </div>
-
+<!-- 3.3 FOOTER (Соц. сети) -->
           <div class="footer__social-container">
             <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
             <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
@@ -245,8 +271,11 @@
         <p class="footer__copyright">Dev by Kostya Okhlynin</p>
 
       </div>
-    </footer>
 
+    </footer>
+<!-- 3. FOOTER END -->
+
+    <!-- 4. MOBILE MENU START -->
     <div class="mobile-menu">
       <div class="mobile-menu__container">
         <div class="mobile-menu__header">
@@ -270,7 +299,8 @@
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">mens</a></li>
             <li class="mobile-menu__item header__womens-js">womens</li>
-            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the brand</a></li>
+            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the
+                brand</a></li>
             <li class="mobile-menu__item header__localstores-js"><a href="/localstores.html"
                 class="mobile-menu__link">local stores</a></li>
             <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html"
@@ -279,6 +309,7 @@
         </nav>
       </div>
     </div>
+    <!-- 4. NOBILE MENU END -->
 
   </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>

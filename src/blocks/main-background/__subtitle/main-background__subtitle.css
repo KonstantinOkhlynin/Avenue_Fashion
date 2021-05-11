@@ -1,3 +1,5 @@
+@import url(./__subtitle_mod/main-background__subtitle_mod.css);
+
 .main-background__subtitle {
   font-size: 30px;
   font-family: 'Montserrat';
@@ -7,6 +9,7 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   margin: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {

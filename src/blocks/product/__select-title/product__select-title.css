@@ -12,11 +12,11 @@
    grid-area: a;
   }
 
-  .product__select-title:nth-child(1) {
+  .product__select-title:nth-child(2) {
     grid-area: c;
    }
 
-   .product__select-title:last-child {
+   .product__select-title:nth-child(3) {
     grid-area: e;
    }
 
