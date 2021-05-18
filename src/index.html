@@ -25,14 +25,20 @@
           <a href="./auth.html" class="header__signin">Sign In</a>
           <div class="header__buy">
             <select class="header__select header__select-white">
-              <option class="header__option ">empty</option>
+              <option disabled selected style='display:none;' class="header__option ">empty</option>
             </select>
+            <div class="header__product">
+              <ul class="header__product-list">
+                <li class="header__product-item">Здесь будут ваши товары</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <!-- 1.2 HEADER (Логотип и навигация) -->
       <div class="header__main">
-        <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span class="header__logo-span">fashion</span></a></h1>
+        <h1 class="header__logo"><a href="./index.html" class="header__link">avenue <span
+              class="header__logo-span">fashion</span></a></h1>
         <img src="<%=require('./images/menu-black.png')%>" alt="" class="header__menu-icon">
         <nav class="header__nav">
           <ul class="header__list">
@@ -50,17 +56,17 @@
         </div>
       </div>
     </header>
-<!-- 1. HEADER END -->
+    <!-- 1. HEADER END -->
 
 
-    <section class="main">
-<!-- 2. BACKGROUND START (Верхний фон) -->
+    <section class="main main-js-one">
+      <!-- 2. BACKGROUND START (Верхний фон) -->
       <div class="home-background">
         </a>
         <button class="button home-background__button">shop men’s collection</button>
       </div>
       <!-- 2. BACKGROUND END -->
-<!-- 2. CATEGORY START (Блок с карточками) -->
+      <!-- 2. CATEGORY START (Блок с карточками) -->
       <div class="category">
         <nav class="category__nav">
           <ul class="category__list">
@@ -82,16 +88,18 @@
           <div class="category__card">
             <p class="category__card-text">£89.99</p>
           </div>
-          <div class="category__card">
+          <div class="category__card category__card-one-js">
             <p class="category__card-text">£47.50</p>
             <div class="card-overflow">
-              <div class="card-overflow__container">
-                <div class="card-overflow__container-img">
-                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-                </div>
-                <div class="card-overflow__img-info"></div>
+              <div class="card-overflow__container-img">
+                <img  data-src="../../../images/photo-g.png" src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img card-overflow__img-js-one">
+                <img data-src="../../../images/thumb-back.png" src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img card-overflow__img-js-two">
               </div>
+
+              <div class="card-overflow__img-info">
+                <p class="card-overflow__img-info-text">Возможен кредит</p>
+              </div>
+
               <div class="card-overflow__container-info">
                 <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
                 <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
@@ -102,20 +110,22 @@
                   <div class="card-overflow__icon"></div>
                 </div>
               </div>
-
-
             </div>
           </div>
-          <div class="category__card">
+          <div class="category__card category__card-two-js">
+
             <p class="category__card-text"> <span class="category__card-text_line-through">£107</span> £89.99 </p>
+
             <div class="card-overflow">
-              <div class="card-overflow__container">
-                <div class="card-overflow__container-img">
-                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-                </div>
-                <div class="card-overflow__img-info"></div>
+              <div class="card-overflow__container-img">
+                <img  data-src="../../../images/photo-g.png" src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img card-overflow__img-js-tree">
+                <img data-src="../../../images/thumb-back.png" src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img card-overflow__img-js-four">
               </div>
+
+              <div class="card-overflow__img-info">
+                <p class="card-overflow__img-info-text">Возможен кредит</p>
+              </div>
+
               <div class="card-overflow__container-info">
                 <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
                 <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
@@ -126,20 +136,21 @@
                   <div class="card-overflow__icon"></div>
                 </div>
               </div>
-
-
             </div>
+
           </div>
-          <div class="category__card">
+          <div class="category__card category__card-tree-js">
             <p class="category__card-text">£69.95</p>
             <div class="card-overflow">
-              <div class="card-overflow__container">
-                <div class="card-overflow__container-img">
-                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-                </div>
-                <div class="card-overflow__img-info"></div>
+              <div class="card-overflow__container-img">
+                <img  data-src="../../../images/photo-g.png" src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img card-overflow__img-js-five">
+                <img data-src="../../../images/thumb-back.png" src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img card-overflow__img-js-six">
               </div>
+
+              <div class="card-overflow__img-info">
+                <p class="card-overflow__img-info-text">Возможен кредит</p>
+              </div>
+
               <div class="card-overflow__container-info">
                 <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
                 <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
@@ -150,20 +161,20 @@
                   <div class="card-overflow__icon"></div>
                 </div>
               </div>
-
-
             </div>
           </div>
-          <div class="category__card">
+          <div class="category__card category__card-four-js">
             <p class="category__card-text">£29.95</p>
             <div class="card-overflow">
-              <div class="card-overflow__container">
-                <div class="card-overflow__container-img">
-                  <img src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img">
-                  <img src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img">
-                </div>
-                <div class="card-overflow__img-info"></div>
+              <div class="card-overflow__container-img">
+                <img  data-src="../../../images/photo-g.png" src="<%=require('./images/thumb-front.png')%>" alt="" class="card-overflow__img card-overflow__img-js-seven">
+                <img data-src="../../../images/thumb-back.png" src="<%=require('./images/thumb-back.png')%>" alt="" class="card-overflow__img card-overflow__img-js-eight">
               </div>
+
+              <div class="card-overflow__img-info">
+                <p class="card-overflow__img-info-text">Возможен кредит</p>
+              </div>
+
               <div class="card-overflow__container-info">
                 <p class="card-overflow__title">Womens burnt orange casual tee £29.95</p>
                 <p class="card-overflow__subtitle">Classic casual t-shirt for women on the move.
@@ -174,8 +185,6 @@
                   <div class="card-overflow__icon"></div>
                 </div>
               </div>
-
-
             </div>
           </div>
           <div class="category__card">
@@ -183,7 +192,7 @@
           </div>
         </div>
       </div>
-<!-- 2. CATEGORY END (Блок с карточками) -->
+      <!-- 2. CATEGORY END (Блок с карточками) -->
       <div class="lookbooks">
         <div class="lookbook__container">
           <h2 class="lookbook__title">men’s</h2>
@@ -215,7 +224,7 @@
     <footer class="footer">
 
       <div class="footer__main">
-<!-- 3.1 FOOTER (Навигация) -->
+        <!-- 3.1 FOOTER (Навигация) -->
         <div class="footer__info">
           <nav class="footer__nav">
             <ul class="footer__list">
@@ -226,9 +235,9 @@
               <li class="footer__item">Privacy & cookies</li>
               <li class="footer__item">Site map</li>
             </ul>
-          </nav>
+          
 
-          <nav class="footer__nav">
+          
             <ul class="footer__list">
               <p class="footer__list-title">Why buy from us</p>
               <li class="footer__item">Shipping & returns</li>
@@ -237,9 +246,9 @@
               <li class="footer__item">Award winning</li>
               <li class="footer__item">Ethical trading</li>
             </ul>
-          </nav>
+          
 
-          <nav class="footer__nav">
+          
             <ul class="footer__list">
               <p class="footer__list-title">Your account</p>
               <li class="footer__item">Sign in</li>
@@ -249,9 +258,9 @@
               <li class="footer__item">Track an order</li>
               <li class="footer__item">Update information</li>
             </ul>
-          </nav>
+          
 
-          <nav class="footer__nav">
+          
             <ul class="footer__list">
               <p class="footer__list-title">Lookbook</p>
               <li class="footer__item">Latest posts</li>
@@ -261,18 +270,18 @@
               <li class="footer__item">View your lookbook</li>
               <li class="footer__item">Delete your lookbook</li>
             </ul>
-          </nav>
-<!-- 3.2 FOOTER (Контакты) -->
-          <nav class="footer__nav">
+          
+          <!-- 3.2 FOOTER (Контакты) -->
+          
             <ul class="footer__list">
               <p class="footer__list-title">contact details</p>
               <li class="footer__item"><a href="https://goo.gl/maps/Q8aj8PKNoBJ3VPtF7" class="footer__link"
-                target="_blank">Head Office: Avenue Fashion,
-                180-182 Regent Street, London.</a></li>
+                  target="_blank">Head Office: Avenue Fashion,
+                  180-182 Regent Street, London.</a></li>
               <li class="footer__item">Telephone: <a href="tel:0123-456-789" class="footer__link"
-                target="_blank">0123-456-789</a></li>
+                  target="_blank">0123-456-789</a></li>
               <li class="footer__item">Email: <a href="mailto:kostya.okhlynin@gmail.com" class="footer__link"
-                target="_blank">kostya.okhlynin@gmail.com</a></li>
+                  target="_blank">kostya.okhlynin@gmail.com</a></li>
             </ul>
           </nav>
         </div>
@@ -283,7 +292,7 @@
             <p class="footer__social-container-title">award winner</p>
             <p class="footer__social-container-subtitle">fashion awards 2016</p>
           </div>
-<!-- 3.3 FOOTER (Соц. сети) -->
+          <!-- 3.3 FOOTER (Соц. сети) -->
           <div class="footer__social-container">
             <img src="<%=require('./images/facebook-logo.png')%>" alt="" class="footer__social-icon">
             <img src="<%=require('./images/twitter-social-logotype.png')%>" alt="" class="footer__social-icon">
@@ -303,44 +312,171 @@
       </div>
 
     </footer>
-<!-- 3. FOOTER END -->
+    <!-- 3. FOOTER END -->
+
 
     <!-- 4. MOBILE MENU START -->
-    <div class="mobile-menu">
-      <div class="mobile-menu__container">
-        <div class="mobile-menu__header">
-          <h1 class="mobile-menu__logo">Avenue Fashion</h1>
-          <img class="mobile-menu__close popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
-        </div>
-        <div class="mobile-menu__main">
-          <p class="mobile-menu__currency">Currency :<select class="header__select mobile-menu__currency">
-              <option class="header__option">GPB</option>
-              <option class="header__option">RUB</option>
-              <option class="header__option">EUR</option>
-              <option class="header__option">USD</option>
-            </select></p>
-          <div class="mobile-menu__buy">
-            <select class="header__select">
-              <option class="header__option ">empty</option>
-            </select>
-          </div>
-        </div>
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">mens</a></li>
-            <li class="mobile-menu__item header__womens-js">womens</li>
-            <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the
-                brand</a></li>
-            <li class="mobile-menu__item header__localstores-js"><a href="./localstores.html"
-                class="mobile-menu__link">local stores</a></li>
-            <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html"
-                class="mobile-menu__link">look book</a></li>
-          </ul>
-        </nav>
+<div class="mobile-menu">
+  <div class="mobile-menu__container">
+    <div class="mobile-menu__header">
+      <h1 class="mobile-menu__logo">Avenue Fashion</h1>
+      <img class="mobile-menu__close popup__close" src="<%=require('./images/close-black.svg')%>" alt="Закрыть">
+    </div>
+    <div class="mobile-menu__main">
+      <p class="mobile-menu__currency">Currency :<select class="header__select mobile-menu__currency">
+          <option class="header__option">GPB</option>
+          <option class="header__option">RUB</option>
+          <option class="header__option">EUR</option>
+          <option class="header__option">USD</option>
+        </select></p>
+      <div class="mobile-menu__buy">
+        <select class="mobile-menu__select">
+          <option class="mobile-menu__option">empty</option>
+        </select>
       </div>
     </div>
-    <!-- 4. NOBILE MENU END -->
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="./product.html" class="mobile-menu__link">mens</a>
+          <div class="mobile-menu__submenu">
+          <nav class="mobile-menu__submenu-nav">
+            <ul class="mobile-menu__submenu-list">
+              <p class="mobile-menu__submenu-title">casuals</p>
+              <li class="mobile-menu__submenu-item">Jakets</li>
+              <li class="mobile-menu__submenu-item">Hoodies & Sweatshirts</li>
+              <li class="mobile-menu__submenu-item">Polo Shirts</li>
+              <li class="mobile-menu__submenu-item">Sportswear</li>
+              <li class="mobile-menu__submenu-item">Trousers & Chinos</li>
+              <li class="mobile-menu__submenu-item">T-Shirts</li>
+            </ul>
+          </nav>
 
+          <nav class="mobile-menu__submenu-nav">
+            <ul class="mobile-menu__submenu-list">
+              <p class="mobile-menu__submenu-title">formal</p>
+              <li class="mobile-menu__submenu-item">Jakets</li>
+              <li class="mobile-menu__submenu-item">Shirts</li>
+              <li class="mobile-menu__submenu-item">Suits</li>
+              <li class="mobile-menu__submenu-item">Sportswear</li>
+              <li class="mobile-menu__submenu-item">Trousers</li>
+            </ul>
+          </nav>
+  </div>
+  </li>
+  <li class="mobile-menu__item header__womens-js">womens
+    <div class="mobile-menu__submenu">
+      <nav class="mobile-menu__submenu-nav">
+        <ul class="mobile-menu__submenu-list">
+          <p class="mobile-menu__submenu-title">casuals</p>
+          <li class="mobile-menu__submenu-item">Jakets</li>
+          <li class="mobile-menu__submenu-item">Hoodies & Sweatshirts</li>
+          <li class="mobile-menu__submenu-item">Polo Shirts</li>
+          <li class="mobile-menu__submenu-item">Sportswear</li>
+          <li class="mobile-menu__submenu-item">Trousers & Chinos</li>
+          <li class="mobile-menu__submenu-item">T-Shirts</li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-menu__submenu-nav">
+        <ul class="mobile-menu__submenu-list">
+          <p class="mobile-menu__submenu-title">formal</p>
+          <li class="mobile-menu__submenu-item">Jakets</li>
+          <li class="mobile-menu__submenu-item">Shirts</li>
+          <li class="mobile-menu__submenu-item">Suits</li>
+          <li class="mobile-menu__submenu-item">Sportswear</li>
+          <li class="mobile-menu__submenu-item">Trousers</li>
+        </ul>
+      </nav>
+</div>
+  </li>
+  <li class="mobile-menu__item"><a href="./brand.html" class="mobile-menu__link">the
+      brand</a>
+      <div class="mobile-menu__submenu">
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">casuals</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Hoodies & Sweatshirts</li>
+            <li class="mobile-menu__submenu-item">Polo Shirts</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers & Chinos</li>
+            <li class="mobile-menu__submenu-item">T-Shirts</li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">formal</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Shirts</li>
+            <li class="mobile-menu__submenu-item">Suits</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers</li>
+          </ul>
+        </nav></li>
+  <li class="mobile-menu__item header__localstores-js"><a href="./localstores.html" class="mobile-menu__link">local
+      stores</a>
+      <div class="mobile-menu__submenu">
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">casuals</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Hoodies & Sweatshirts</li>
+            <li class="mobile-menu__submenu-item">Polo Shirts</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers & Chinos</li>
+            <li class="mobile-menu__submenu-item">T-Shirts</li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">formal</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Shirts</li>
+            <li class="mobile-menu__submenu-item">Suits</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers</li>
+          </ul>
+        </nav></li>
+  <li class="mobile-menu__item header__lookbook-js"><a href="./lookbookpage.html" class="mobile-menu__link">look
+      book</a>
+      <div class="mobile-menu__submenu">
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">casuals</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Hoodies & Sweatshirts</li>
+            <li class="mobile-menu__submenu-item">Polo Shirts</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers & Chinos</li>
+            <li class="mobile-menu__submenu-item">T-Shirts</li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-menu__submenu-nav">
+          <ul class="mobile-menu__submenu-list">
+            <p class="mobile-menu__submenu-title">formal</p>
+            <li class="mobile-menu__submenu-item">Jakets</li>
+            <li class="mobile-menu__submenu-item">Shirts</li>
+            <li class="mobile-menu__submenu-item">Suits</li>
+            <li class="mobile-menu__submenu-item">Sportswear</li>
+            <li class="mobile-menu__submenu-item">Trousers</li>
+          </ul>
+        </nav></li>
+  </ul>
+  </nav>
+  <div class="mobile-menu__sale">
+    <div class="modal__sale">
+      <p class="modal__sale-title">autumn sale!</p>
+      <p class="modal__sale-subtitle">up to 50% off</p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- 4. NOBILE MENU END -->
+
+    
 
 
   </div>

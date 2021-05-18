@@ -8,3 +8,10 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+
+@media screen and (max-width: 440px) {
+  .modal__sale-title {
+    font-size: 22px;
+  }
+}

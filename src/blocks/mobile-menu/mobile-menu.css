@@ -9,6 +9,14 @@
 @import url(./__currency/mobile-menu__currency.css);
 @import url(./__main/mobile-menu__main.css);
 @import url(./__buy/mobile-menu__buy.css);
+@import url(./__select/mobile-menu__select.css);
+@import url(./__option/mobile-menu__option.css);
+@import url(./__sale/mobile-menu__sale.css);
+@import url(./__submenu/mobile-menu__submenu.css);
+@import url(./__submenu-nav/mobile-menu__submenu-nav.css);
+@import url(./__submenu-list/mobile-menu__submenu-list.css);
+@import url(./__submenu-item/mobile-menu__submenu-item.css);
+@import url(./__submenu-title/mobile-menu__submenu-title.css);
 
 .mobile-menu {
   width: 100%;
@@ -19,6 +27,7 @@
   background-color: rgba(0,0,0,.5);
   display: none;
   z-index: 2;
+  overflow-x: scroll;
 }
 
 

@@ -14,3 +14,9 @@
     font-size: 26px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .footer__social-container-title {
+    font-size: 20px;
+  }
+}

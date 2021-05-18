@@ -8,10 +8,30 @@
   margin: 0;
 }
 
+.footer__list:nth-child(1) {
+  grid-area: a;
+}
 
+.footer__list:nth-child(2) {
+  grid-area: b;
+}
+
+.footer__list:nth-child(3) {
+  grid-area: c;
+}
+
+.footer__list:nth-child(4) {
+  grid-area: d;
+}
+
+.footer__list:nth-child(5) {
+  grid-area: e;
+}
+
+/* 
 @media screen and (max-width: 920px) {
   .footer__list {
     margin-bottom: 30px;
     padding-left: 40px;
   }
-}
+} */

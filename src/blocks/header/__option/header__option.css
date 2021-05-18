@@ -1,4 +1,7 @@
 .header__option {
   font-size: 13px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
 }
+

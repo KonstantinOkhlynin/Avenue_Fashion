@@ -12,3 +12,10 @@
   color: #00c8c8;
   cursor: pointer;
 }
+
+@media screen and (max-width: 360px) {
+  .footer__item {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}

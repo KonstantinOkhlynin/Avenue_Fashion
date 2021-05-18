@@ -43,7 +43,7 @@
   bottom: 0;
 }
 
-@media screen and (min-width: 660px) and (max-width: 1220px) {
+@media screen and (min-width: 680px) and (max-width: 1220px) {
   .category {
     margin-left: 70px;
     margin-right: 70px;

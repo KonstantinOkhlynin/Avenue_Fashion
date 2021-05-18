@@ -30,7 +30,8 @@ zoomOut = () => {
 
 listener = () => {
   if (document.querySelector('.main-js')) {
-  this.container.addEventListener('mouseover', this.zoomIn)
+  this.zoomer.addEventListener('click', this.zoomOut)
+  this.container.addEventListener('click', this.zoomIn)
   this.zoomer.addEventListener('mousemove', this.zoomMove)
   this.zoomer.addEventListener('mouseleave', this.zoomOut)
   }

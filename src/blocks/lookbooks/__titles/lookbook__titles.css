@@ -9,9 +9,17 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 700px) {
   .lookbook__titles {
     font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .lookbook__titles {
+    font-size: 22px;
     margin-bottom: 15px;
   }
 }

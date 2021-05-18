@@ -11,3 +11,15 @@
 .card-overflow__img:last-child {
   margin-top: 15px;
 }
+
+
+@media screen and (max-width: 680px) {
+  .card-overflow__img {
+    width: 51px;
+    height: 61px;
+  }
+
+  .card-overflow__img:last-child {
+    margin-top: 10px;
+  }
+}

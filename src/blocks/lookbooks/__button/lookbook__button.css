@@ -20,3 +20,10 @@
   background-color: #00c8c8;
   border-color: #00c8c8;
 }
+
+
+@media screen and (max-width: 500px) {
+  .lookbook__button {
+    margin-top: 15px;
+  }
+}

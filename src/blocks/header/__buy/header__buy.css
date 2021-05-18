@@ -20,6 +20,10 @@
   left: 23px;
 }
 
+.header__buy:hover .header__product  {
+  display: block;
+}
+
 
 @media screen and (max-width: 450px) {
   .header__buy {

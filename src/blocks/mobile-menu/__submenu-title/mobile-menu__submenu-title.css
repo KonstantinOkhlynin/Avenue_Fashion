@@ -1,0 +1,9 @@
+.mobile-menu__submenu-title {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #575153;
+  margin: 0;
+  margin-bottom: 10px;
+}

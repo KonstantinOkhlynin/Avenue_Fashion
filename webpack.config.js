@@ -60,14 +60,14 @@ module.exports = {
 
         plugins: [
             new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
-        //     new OptimizeCssAssetsPlugin({
-        //         assetNameRegExp: /\.css$/g,
-        //         cssProcessor: require('cssnano'),
-        //         cssProcessorPluginOptions: {
-        //                 preset: ['default'],
-        //         },
-        //         canPrint: true
-        // }),
+            new OptimizeCssAssetsPlugin({
+                assetNameRegExp: /\.css$/g,
+                cssProcessor: require('cssnano'),
+                cssProcessorPluginOptions: {
+                        preset: ['default'],
+                },
+                canPrint: true
+        }),
             new HtmlWebpackPlugin({ // настроили плагин
                 inject: false,
                 template: './src/index.html',

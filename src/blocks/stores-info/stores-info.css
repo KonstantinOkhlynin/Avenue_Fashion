@@ -29,11 +29,13 @@
       "."
       "."
     ;
+    margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .stores-info {
     grid-template-rows: 300px 1fr;
+    margin-bottom: 62px;
   }
 }

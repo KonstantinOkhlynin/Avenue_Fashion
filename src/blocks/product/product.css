@@ -58,7 +58,20 @@
 @media screen and (max-width: 650px) {
   .product {
     gap: 40px 20px;
-    grid-template-rows: 710px 1fr 1fr;
+    grid-template-rows: 710px 1fr 710px;
+    grid-template-areas:
+      ". a ."
+      ". b ."
+      "c c c";
+      margin-bottom: 60px;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .product {
+    gap: 40px 20px;
+    grid-template-rows: 710px 1fr 600px;
     grid-template-areas:
       ". a ."
       ". b ."

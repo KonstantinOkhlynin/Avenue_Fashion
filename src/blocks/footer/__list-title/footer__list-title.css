@@ -8,3 +8,10 @@
   font-style: normal;
   margin-bottom: 14px;
 }
+
+
+@media screen and (max-width: 360px) {
+  .footer__list-title {
+    margin-bottom: 0;
+  }
+}

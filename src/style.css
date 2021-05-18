@@ -27,12 +27,133 @@
 
 
 
-.slider__item .zoomer {
+.zoomer {
   display: none;
-  background-size: 250%; 
+  background-size: 200%; 
   width: 100%;
   height: 100%;
   cursor: zoom-out;
-  z-index: 1;
 }
+
+.header__product {
+  position: absolute;
+  bottom: -102px;
+  left: 0;
+  width: 155px;
+  height: 100px;
+  display: none;
+  border: solid 1px #e7e7e7;
+  background-color: #464242;
+  z-index: 2;
+}
+
+.header__product::before {
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  left: 65px;
+  width: 20px;
+  height: 17px;
+  background-image: url(./images/shopping-cart.png) ;
+}
+
+.header__product-list {
+  list-style: none;
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+.product__video-container-js {
+display: none;
+justify-content: center;
+}
+
+.product__size-container-js {
+  display: none;
+  }
+
+.product__delivery-container-js {
+    display: none;
+    }
+
+.product__reviews-container-js {
+  display: none;
+      }
+
  
+      .product__input-number-container {
+        width: 70px;
+        height: 35px;
+        position: relative;
+        padding: 0;
+      }
+      
+      .product__input-number-button-top {
+        width: 35px;
+        height: 17px;
+        top: 0;
+        right: 0;
+        border: none;
+        position: absolute;
+        border-left: solid 1px #e7e7e7;
+        border-bottom: solid 1px #e7e7e7;
+        background: transparent;
+        padding: 0;
+        color: #989898;
+        font-size: 10px;
+      }
+      
+      .product__input-number-button-top::before {
+       content: '>';
+        top: 3px;
+        right: 16px;
+        position: absolute;
+        font-size: 10px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        transform: rotate(-90deg);
+      }
+      
+      .product__input-number-button-bottom {
+        width: 35px;
+        height: 18px;
+        bottom: 0;
+        right: 0;
+        border: none;
+        position: absolute;
+        border-left: solid 1px #e7e7e7;
+        background: transparent;
+        padding: 0;
+        color: #989898;
+        font-size: 10px;
+      }
+      
+      .product__input-number-button-bottom::before {
+        content: '>';
+         top: 3px;
+         right: 16px;
+         position: absolute;
+         font-size: 10px;
+         font-family: 'Montserrat';
+         font-weight: 400;
+         transform: rotate(90deg);
+       }
+      
+      
+      input[type="number"] {
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        outline: none;
+      }
+      
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+      }

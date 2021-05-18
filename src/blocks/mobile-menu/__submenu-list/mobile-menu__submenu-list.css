@@ -1,0 +1,13 @@
+.mobile-menu__submenu-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal;
+    color: #727272;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}

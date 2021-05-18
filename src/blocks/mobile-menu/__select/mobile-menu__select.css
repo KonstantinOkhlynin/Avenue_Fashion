@@ -1,0 +1,11 @@
+.mobile-menu__select {
+    background: none;
+    border: none;
+    color: #222222;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+}

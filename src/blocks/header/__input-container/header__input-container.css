@@ -10,9 +10,10 @@
   width: 13px;
   height: 15px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 10px;
   z-index: 1;
+  cursor: pointer;
 }
 
 

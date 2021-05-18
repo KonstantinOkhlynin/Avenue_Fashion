@@ -6,10 +6,23 @@
   padding: 62px 54px;
   box-sizing: border-box;
   text-align: center;
+  justify-content: center;
 }
 
 .modal__sale:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
   transition: transform .5s linear;
+}
+
+
+@media screen and (max-width: 440px) {
+  .modal__sale {
+    margin-top: 40px;
+    padding: 32px 25px;
+    height: auto;
+    width: 250px;
+    margin-bottom: 40px;
+  }
+  
 }

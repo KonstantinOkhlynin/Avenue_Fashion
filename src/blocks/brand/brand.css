@@ -20,12 +20,39 @@
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 500px) and (max-width: 1300px) {
   .brand {
-    display: grid;
     grid-template-columns: minmax(250px, 590px);
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+    ;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+  }
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .brand {
+    grid-template-columns: minmax(250px, 590px);
+    grid-template-rows: 1000px 1fr;
+    grid-template-areas:
+      "."
+      "."
+    ;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .brand {
+    grid-template-columns: minmax(250px, 590px);
+    grid-template-rows: 900px 1fr;
     grid-template-areas:
       "."
       "."

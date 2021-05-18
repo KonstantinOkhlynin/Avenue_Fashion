@@ -1,7 +1,7 @@
 .card-overflow__container-info {
   width: 100%;
   box-sizing: border-box;
-  padding: 18px 35px 18px 35px;
+  padding: 18px 10px 18px 10px;
   background-color: #ffffff;
   border-top: solid 1px #eeeeee;
   display: flex;
@@ -9,4 +9,11 @@
   align-items: center;
   z-index: 2;
   text-align: center;
+}
+
+
+@media screen and (max-width: 680px) {
+  .card-overflow__container-info {
+    padding: 10px 18px 10px 18px; 
+  }
 }

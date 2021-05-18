@@ -27,6 +27,7 @@
   height: 710px;
   background-repeat: no-repeat;
   background-position: bottom;
+  cursor: zoom-in;
 }
 
 /* кнопки влево и вправо */

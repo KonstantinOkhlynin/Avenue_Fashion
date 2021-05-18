@@ -8,3 +8,10 @@
   margin: 0;
   margin-bottom: 18px;
 }
+
+@media screen and (max-width: 680px) {
+  .card-overflow__title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}

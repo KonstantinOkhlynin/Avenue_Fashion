@@ -21,12 +21,12 @@
 
 @media screen and (min-width: 360px) and (max-width: 650px) {
     .product__description-container {
-        grid-template-rows: 280px 1fr;
+        grid-template-rows: 280px 430px;
     }
   } 
 
   @media screen and (max-width: 360px) {
     .product__description-container {
-        grid-template-rows: 160px 1fr;
+        grid-template-rows: 160px 430px;
     }
   } 

@@ -2,10 +2,9 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #1A1B22;
+  overflow-x: scroll;
+  background-color: #fff;
   width: 100%;
-  height: auto;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  height: 100%;
   z-index: 2;
 }

@@ -2,5 +2,37 @@
   background-image: url(../../../images/icon-info.png);
   width: 68px;
   height: 68px;
-  margin-top: 60px;
+  margin-top: 30px;
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 680px) {
+  .card-overflow__img-info {
+    width: 68px;
+    height: 68px;
+    margin-top: 15px;
+  }
+}
+
+.card-overflow__img-info:hover .card-overflow__img-info-text {
+  display: block;
+}
+
+
+.card-overflow__img-info-text {
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  margin: 0;
+  width: 150px;
+  color: #000;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  display: none;
+  border: solid 1px #7b7777;
+  text-align: center;
 }

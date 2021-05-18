@@ -1,12 +1,16 @@
 .mobile-menu__item {
   text-transform: uppercase;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  margin-bottom: 10px;
-  position: relative;
-  width: 130px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    color: #222222;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+    border-bottom: solid 1px;
+    height: 35px;
+    transition: height .4s ease-in-out;
+    overflow: hidden;
 }
 
 
@@ -18,5 +22,42 @@
   height: 5px;
   position: absolute;
   top: 6px;
-  right: -8px;
+  right: 20px;
+}
+
+.mobile-menu__item:hover{
+ height: 220px;
+ transition: height .4s ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-menu__item:hover{
+    height: 220px;
+    transition: height .4s ease-in-out;
+   }
+}
+
+@media screen and (max-width: 440px) {
+  .mobile-menu__item {
+      font-size: 22px;
+  }
+
+  .mobile-menu__item:hover{
+    height: 220px;
+    transition: height .4s ease-in-out;
+   }
+}
+
+@media screen and (max-width: 345px) {
+  .mobile-menu__item:hover{
+    height: 230px;
+    transition: height .4s ease-in-out;
+   }
+}
+
+@media screen and (max-width: 310px) {
+  .mobile-menu__item:hover{
+    height: 240px;
+    transition: height .4s ease-in-out;
+   }
 }

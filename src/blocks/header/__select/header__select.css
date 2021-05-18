@@ -5,4 +5,10 @@
   outline: none;
   position: relative;
   cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
 }
+
+

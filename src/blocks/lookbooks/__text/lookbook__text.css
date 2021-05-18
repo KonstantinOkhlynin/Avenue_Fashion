@@ -23,5 +23,6 @@
 @media screen and (max-width: 700px) {
   .lookbook__text:nth-child(2n) {
     margin-top: 15px;
+    font-size: 12px;
   }
 }
