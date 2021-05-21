@@ -43,7 +43,7 @@
   height: 100px;
   display: none;
   border: solid 1px #e7e7e7;
-  background-color: #464242;
+  background-color: #333333;
   z-index: 2;
 }
 
@@ -64,7 +64,7 @@
   font-weight: 400;
   font-style: normal;
   padding: 0;
-  color: #fff;
+  color: #999;
   text-align: center;
 }
 
