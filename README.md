@@ -1,13 +1,7 @@
-   ![Header](https://github.com/KonstantinOkhlynin/KonstantinOkhlynin/blob/main/assets/Logo.svg)
-   [![Header](https://github.com/KonstantinOkhlynin/KonstantinOkhlynin/blob/main/assets/EnglishReadme.svg)](https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend/blob/master/README.EN.md)
-   [![Header](https://github.com/KonstantinOkhlynin/KonstantinOkhlynin/blob/main/assets/GoToTheWebsiteRu.svg)](https://konstantinokhlynin.github.io/NewsExplorer-Frontend/)
-# NewsExplorer
-### Дипломный проект курса веб-разработки на портале онлайн обучения Яндекс.Практикум. Сайт для поиска свежих новостей в интернете с возможностью регистрации и сохранения интересных новостей у себя в профиле (!!! На данный момент эта функция недоступна, так как требует финансовых затрат на оплату хостинга). Для сохранения карточек мной был написан отдельный бекенд для этого проекта, вы можете с ним ознакомиться по ссылке [NewsExplorer-Backend](https://github.com/KonstantinOkhlynin/NewsExplorer-Backend). 
-## Цель 
-### Целью данного проекта является закрепить на практике все полученные на курсе знания и получить [Сертификат](https://github.com/KonstantinOkhlynin/Certificate-Practicum-by-Yandex) о прохождении курса. В данном проекте это была проверка таких навыков как:
-#### 1. Вёрстка (HTML5 и CSS3), в том числе и отзывчивая, сайт адаптирован под несколько разрешений экранов;
-#### 2. Программирование на языке JavaScript, с использованием парадигмы ООП;
-#### 3. Чистота и аккуратность кода;
+# Author: Konstantin Okhlynin
+# [**Сайт**]https://konstantinokhlynin.github.io/Avenue_Fashion/)
+# Avenue Fashion
+### Учебный веб-сайт, интернет магазин одежды, состоящий из нескольких страниц. Сайт адаптивный, навигация работает. 
 ## Языки
 ### ‣ JavaScript(ES6);
 ### ‣ HTML5;
@@ -43,17 +37,17 @@
 #### ‣ [core-js](https://www.npmjs.com/package/core-js);
 #### ‣ [path](https://www.npmjs.com/package/path);
 ## Инструкция по развёртыванию
-### 1. Вы можете открыть веб-сайт нажав на кнопку `Перейти на сайт` в самом начале Readme.
+### 1. Вы можете открыть веб-сайт нажав на кнопку `Сайт` в самом начале Readme.
 ### 2. Для развёртывания веб-сайта на своём локальном компьютере нужно:
-#### ‣ Склонировать репозиторий на свой локальный компьютер c помощью команды
+#### ‣ Склонировать репозиторий на свой локальный компьютер c помощью команды:
 ```bash
-# git clone https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend.git
+# git clone https://github.com/KonstantinOkhlynin/Avenue_Fashion.git
 ``` 
-#### ‣ Установить npm-зависимости с помощью команды
+#### ‣ Установить npm-зависимости с помощью команды:
 ```bash
 # npm install
 ``` 
-#### ‣ Запустить веб-сайт с помощью команды
+#### ‣ Запустить веб-сайт с помощью команды:
 ```bash
 # npm run dev
 ``` 
