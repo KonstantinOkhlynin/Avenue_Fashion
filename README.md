@@ -1,5 +1,5 @@
 # Author: Konstantin Okhlynin
-# [**Сайт**]https://konstantinokhlynin.github.io/Avenue_Fashion/)
+# [**Сайт**](https://konstantinokhlynin.github.io/avenue-fashion/)
 # Avenue Fashion
 ### Учебный веб-сайт, интернет магазин одежды, состоящий из нескольких страниц. Сайт адаптивный, навигация работает. 
 ## Языки
