@@ -1,7 +1,6 @@
 # Author: Konstantin Okhlynin
-# [**English Readme**](https://github.com/KonstantinOkhlynin/Avenue_Fashion/blob/main/README.EN.md)
-# [**Website**](https://konstantinokhlynin.github.io/Avenue_Fashion/)
-# NewsExplorer
+# [**Website**](https://konstantinokhlynin.github.io/avenue-fashion/)
+# Avenue Fashion
 ### Educational website, an online clothing store consisting of several pages. The site is adaptive, the navigation works.
 ## Languages
 ### ‣ JavaScript(ES6);
